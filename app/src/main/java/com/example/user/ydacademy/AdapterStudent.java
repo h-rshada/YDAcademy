@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.squareup.picasso.Picasso;
 
 import java.util.Collections;
 import java.util.List;
@@ -66,8 +67,9 @@ public class AdapterStudent extends RecyclerView.Adapter<RecyclerView.ViewHolder
         myHolder.name.setText(dataStudent.name);
         Log.d("name", dataStudent.name);
         myHolder.description.setText(dataStudent.class1);
+        Picasso.with(context).load("http://yashodeepacademy.co.in/studentachievers/" + dataStudent.id + ".jpg").placeholder(R.drawable.sorryimagenotavailable).into(myHolder.imageStudent);
 
-        Glide.with(context).load("http://yashodeepacademy.co.in/studentacheivers/" + dataStudent.id + ".jpg").asBitmap().override(600, 600)
+       /* Glide.with(context).load("http://yashodeepacademy.co.in/studentacheivers/" + dataStudent.id + ".jpg").asBitmap().override(600, 600)
                 .placeholder(null).listener(new RequestListener<String, Bitmap>() {
             @Override
             public boolean onException(Exception e, String model, Target<Bitmap> target, boolean isFirstResource) {
@@ -83,7 +85,7 @@ public class AdapterStudent extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
             }
         }).error(null)
-                .into(myHolder.imageStudent);
+                .into(myHolder.imageStudent);*/
 
 /*
         myHolder.cardView.setOnClickListener(new View.OnClickListener() {
