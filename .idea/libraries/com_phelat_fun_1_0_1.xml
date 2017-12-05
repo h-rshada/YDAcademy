@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.phelat:fun-1.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fun-1.0.1.aar/b5d7ff9e6753715c3a1e6e6cf03f8db1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fun-1.0.1.aar/b5d7ff9e6753715c3a1e6e6cf03f8db1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.phelat/fun/1.0.1/a1769c9e819a0f69ea63bfea79d5115e59d531da/fun-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

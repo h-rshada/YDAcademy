@@ -44,7 +44,7 @@ public class TestActivity extends AppCompatActivity {
     CountDownTimer countDownTimer;
     String answerKey, ans, data, userans, exam, subject, chapter, es, class1, responseCheck;
     ProgressBar progressBar ;
-    int count, c, i, flag = 0;
+    int count, c, i, flag = 0, state = 0;
     UrlRequest urlRequest;
     JSONObject json_data;
     SharedPreferences sp;
@@ -95,38 +95,42 @@ public class TestActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(String response) {
                         Log.d("Response", response);
+                        if (state == 0 && (!response.equals("Invalid subject code"))) {
+                            try {
 
-                        try {
+                                JSONArray jArray = new JSONArray(response);
+                                answerKey = "";
+                                for (i = 0; i < jArray.length(); i++) {
+                                    json_data = jArray.getJSONObject(i);
+                                    Log.d("wth", "onSuccess: " + json_data.getString("ans"));
+                                    answerKey += json_data.getString("ans");
+                                }
+                                Log.d("answerkey***", answerKey.length() + "");
+                                Log.d("userans***", userans.length() + "");
+                                Log.d("userans***", userans + " ");
+                                Log.d("state: ", state + "");
+                                while (answerKey.length() < 50) {
+                                    answerKey += "0";
 
-                            JSONArray jArray = new JSONArray(response);
-                            answerKey = "";
-                            for (i = 0; i < jArray.length(); i++) {
-                                json_data = jArray.getJSONObject(i);
-                                Log.d("wth", "onSuccess: " + json_data.getString("ans"));
-                                answerKey += json_data.getString("ans");
+                                }
+
+                                data = userans + " " + answerKey;
+                                Intent intent = new Intent(TestActivity.this, ResultActivity.class);
+                                intent.putExtra("data", data);
+                                intent.putExtra("Class", class1);
+                                intent.putExtra("Subject", subject);
+                                intent.putExtra("Exam", exam);
+                                intent.putExtra("ES", es);
+                                intent.putExtra("Chapter", chapter);
+                                TestActivity.this.finish();
+                                startActivity(intent);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+
                             }
-                            Log.d("answerkey***", answerKey.length() + "");
-                            Log.d("userans***", userans.length() + "");
-                            Log.d("userans***", userans + " ");
-                            while (answerKey.length() < 50) {
-                                answerKey += "0";
-
-                            }
-
-                            data = userans + " " + answerKey;
-                            Intent intent = new Intent(TestActivity.this, ResultActivity.class);
-                            intent.putExtra("data", data);
-                            intent.putExtra("Class", class1);
-                            intent.putExtra("Subject", subject);
-                            intent.putExtra("Exam", exam);
-                            intent.putExtra("ES", es);
-                            intent.putExtra("Chapter", chapter);
-                            TestActivity.this.finish();
-                            startActivity(intent);
-
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-
+                        } else {
+                            Toast.makeText(TestActivity.this, "insert answer entry in DB", Toast.LENGTH_LONG).show();
                         }
 
 
@@ -166,14 +170,17 @@ public class TestActivity extends AppCompatActivity {
                        c = 0;
                    }
                    if (count == 3) {
+                       state = 1;
                        DesertPlaceholder desertPlaceholder = (DesertPlaceholder) findViewById(R.id.placeholder);
                        desertPlaceholder.setVisibility(View.VISIBLE);
                        desertPlaceholder.setOnButtonClickListener(new View.OnClickListener() {
                            @Override
                            public void onClick(View v) {
-                               finish();
                                Intent intent = new Intent(TestActivity.this, TabActivity.class);
+                               intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                               TestActivity.this.finishAffinity();
                                startActivity(intent);
+
                            }
                        });
 
