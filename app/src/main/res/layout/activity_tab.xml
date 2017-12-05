@@ -5,9 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.user.ydacademy.TabActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:titleTextColor="#ffff">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DashBoard"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"/>
+
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
     <android.support.design.widget.AppBarLayout
         android:id="@+id/tabs1"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -29,5 +53,6 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/tabs1"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
 
 </RelativeLayout>
