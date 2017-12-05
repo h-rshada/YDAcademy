@@ -57,7 +57,8 @@ public class Performance extends AppCompatActivity {
                                            List<DataPerformance> data = new ArrayList<>();
                                            try {
                                                JSONArray jsonArray = new JSONArray(response);
-                                               for (int i = 0; i < jsonArray.length(); i++) {
+                                               for (int i = 0; i < jsonArray.length(); i++)
+                                               {
                                                    DataPerformance dataPerformance = new DataPerformance();
                                                    JSONObject jsonObject = jsonArray.getJSONObject(i);
                                                    exam1 = jsonObject.getString("examcode");

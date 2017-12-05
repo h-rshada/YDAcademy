@@ -99,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 urlRequest = UrlRequest.getObject();
                 urlRequest.setContext(LoginActivity.this);
-                urlRequest.setUrl("http://yashodeepacademy.co.in/login_verification.php?username=" + username + "&password=" + password);
+                urlRequest.setUrl("http://192.168.0.22:8001/login_verification.php?username=" + username + "&password=" + password);
                 urlRequest.getResponse(new ServerCallback() {
                                            @Override
                                            public void onSuccess(String response) {
@@ -118,7 +118,14 @@ public class LoginActivity extends AppCompatActivity {
                                                        if (!(class1.equals("10"))) {
                                                            editor.putString("ID1", id);
                                                            editor.putString("CLASS1", class1);
+                                                           editor.commit();
                                                        }
+                                                       else {
+
+                                                           editor.putString("ID1",null);
+                                                           editor.commit();
+                                                       }
+
                                                        editor.putString("ID", id);
                                                        editor.putString("CLASS", class1);
                                                        editor.putString("USERNAME", name);
