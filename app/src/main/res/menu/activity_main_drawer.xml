@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_account_circle_black1_24dp"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_classroom"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Go To Classroom" />
+        <item
+            android:id="@+id/nav_staff"
+            android:icon="@drawable/ic_supervisor_account_black_24dp"
+            android:title="Staff" />
+        <item
+            android:id="@+id/nav_Stat"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Student Stat" />
+        <item
+            android:id="@+id/nav_careerguidance"
+            android:icon="@drawable/ic_explore_black_24dp"
+            android:title="Career Guidance" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_contact_phone_black_24dp"
+                android:title="Contact US" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>

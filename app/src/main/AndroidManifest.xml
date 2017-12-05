@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.ydacademy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CareerDetailsActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SyllabusActivity" />
+        <activity android:name=".ChapterActivity" />
+        <activity
+            android:name=".TestActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ResultActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".DescriptionActivity" />
+        <activity android:name=".StartTest" />
+        <activity android:name=".SuccessStories" />
+        <activity android:name=".DirectorInfo" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TenthActivity" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".OurAchievers" />
+        <activity android:name=".ImpQuestions" />
+        <activity android:name=".ListQuestions" />
+        <activity android:name=".StaffActivity" />
+        <activity android:name=".CareerGuidance" />
+        <activity android:name=".Performance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StudentStatforAdmin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AchieversDescription"></activity>
+    </application>
+
+</manifest>
