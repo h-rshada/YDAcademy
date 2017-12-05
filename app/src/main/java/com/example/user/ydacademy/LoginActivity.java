@@ -99,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 urlRequest = UrlRequest.getObject();
                 urlRequest.setContext(LoginActivity.this);
-                urlRequest.setUrl("http://192.168.0.22:8001/login_verification.php?username=" + username + "&password=" + password);
+                urlRequest.setUrl("http://192.168.0.22:8003/login_verification.php?username=" + username + "&password=" + password);
                 urlRequest.getResponse(new ServerCallback() {
                                            @Override
                                            public void onSuccess(String response) {
@@ -125,7 +125,6 @@ public class LoginActivity extends AppCompatActivity {
                                                            editor.putString("ID1",null);
                                                            editor.commit();
                                                        }
-
                                                        editor.putString("ID", id);
                                                        editor.putString("CLASS", class1);
                                                        editor.putString("USERNAME", name);
