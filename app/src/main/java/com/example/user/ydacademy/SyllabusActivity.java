@@ -1,10 +1,12 @@
 package com.example.user.ydacademy;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -25,7 +27,7 @@ public class SyllabusActivity extends AppCompatActivity {
     WebView webView1;
     @InjectView(R.id.img_back)
     ImageView imageback;
-    Toolbar toolbar;
+    Toolbar toolbar ;
     UrlRequest urlRequest;
     SharedPreferences sp;
     private ProgressDialog loading;
@@ -87,9 +89,10 @@ public class SyllabusActivity extends AppCompatActivity {
 
     @OnClick({R.id.img_back}) /* , R.id.fab*/
     public void onClick(View view) {
-        switch (view.getId()) {
+        switch (view.getId())
+        {
             case R.id.img_back:
-                Intent intent = new Intent(SyllabusActivity.this, TabActivity.class);
+                Intent intent=new Intent(SyllabusActivity.this,TabActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -1,7 +1,9 @@
 package com.example.user.ydacademy;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -24,12 +26,12 @@ public class TabActivity extends AppCompatActivity {
 
     public TabLayout tabLayout;
     Toast toast;
-    @InjectView(R.id.img_back)
-    ImageView imageback;
     private Toolbar toolbar;
     private ViewPager viewPager;
     private long back_pressed = 0;
 
+    @InjectView(R.id.img_back)
+    ImageView imageback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,16 +89,7 @@ public class TabActivity extends AppCompatActivity {
         back_pressed = System.currentTimeMillis();
     }
 
-    @OnClick({R.id.img_back}) /* , R.id.fab*/
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.img_back:
-                Intent intent = new Intent(TabActivity.this, MainActivity.class);
-                startActivity(intent);
-                break;
-        }
 
-    }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
@@ -124,6 +117,17 @@ public class TabActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return mFragmentTitleList.get(position);
         }
+    }
+    @OnClick({R.id.img_back}) /* , R.id.fab*/
+    public void onClick(View view) {
+        switch (view.getId())
+        {
+            case R.id.img_back:
+                Intent intent=new Intent(TabActivity.this,MainActivity.class);
+                startActivity(intent);
+                break;
+        }
+
     }
 
 }

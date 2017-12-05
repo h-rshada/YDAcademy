@@ -15,27 +15,26 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".TabActivity"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".TabActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity android:name=".CareerDetailsActivity" />
-        <activity
-            android:name=".LoginActivity"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".SyllabusActivity"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".ChapterActivity"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
+        </activity>
+        <activity android:name=".SyllabusActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
+        </activity>
+        <activity android:name=".ChapterActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
+        </activity>
 
         <activity
             android:name=".TestActivity"
@@ -46,18 +45,14 @@
             android:launchMode="singleInstance" />
         <activity android:name=".DescriptionActivity" />
 
-        <activity
-            android:name=".StartTest"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
-
+        <activity android:name=".StartTest"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
         </activity>
 
-        <activity
-            android:name=".SuccessStories"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
-
+        <activity android:name=".SuccessStories"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
         </activity>
 
         <activity android:name=".DirectorInfo" />
@@ -73,48 +68,36 @@
 
         <activity android:name=".TenthActivity" />
 
-        <activity
-            android:name=".AboutUs"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
-
+        <activity android:name=".AboutUs"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
         </activity>
-        <activity
-            android:name=".ContactUs"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
-
+        <activity android:name=".ContactUs"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
         </activity>
-        <activity
-            android:name=".OurAchievers"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
-
+        <activity android:name=".OurAchievers"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
         </activity>
-        <activity
-            android:name=".ImpQuestions"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ImpQuestions"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
 
         </activity>
 
         <activity android:name=".ListQuestions" />
-        <activity
-            android:name=".StaffActivity"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
-
+        <activity android:name=".StaffActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
         </activity>
-        <activity
-            android:name=".CareerGuidance"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
-
+        <activity android:name=".CareerGuidance"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
         </activity>
-        <activity
-            android:name=".Performance"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Performance"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -132,17 +115,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".StudentStatforAdmin"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".StudentStatforAdmin"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".AchieversDescription">
-
-        </activity>
+        <activity android:name=".AchieversDescription"></activity>
     </application>
 
 </manifest>

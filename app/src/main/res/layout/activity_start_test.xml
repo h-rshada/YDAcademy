@@ -7,6 +7,35 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context="com.example.user.ydacademy.StartTest">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffff">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/toolbar1"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/leftarrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Test"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar1"

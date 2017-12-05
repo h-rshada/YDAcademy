@@ -1,8 +1,10 @@
 package com.example.user.ydacademy;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -29,7 +31,7 @@ public class StartTest extends AppCompatActivity {
     int count;
     @InjectView(R.id.img_back)
     ImageView imageback;
-    Toolbar toolbar;
+    Toolbar toolbar ;
     UrlRequest urlRequest;
     SharedPreferences sp;
 
@@ -57,7 +59,7 @@ public class StartTest extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.btn_startTest, R.id.img_back})
+    @OnClick({R.id.btn_startTest,R.id.img_back})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_startTest:
@@ -100,7 +102,7 @@ public class StartTest extends AppCompatActivity {
                 );
                 break;
             case R.id.img_back:
-                Intent intent = new Intent(StartTest.this, TabActivity.class);
+                Intent intent=new Intent(StartTest.this,TabActivity.class);
                 startActivity(intent);
                 break;
         }

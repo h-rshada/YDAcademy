@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
     RelativeLayout relativeLayout;
     @InjectView(R.id.img_back)
     ImageView imageback;
-    Toolbar toolbar;
+    Toolbar toolbar ;
     UrlRequest urlRequest;
     String username, password, name, id, class1;
 
@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    @OnClick({R.id.btnLogin, R.id.txtForgotPassword, R.id.img_back}) /* , R.id.fab*/
+    @OnClick({R.id.btnLogin, R.id.txtForgotPassword,R.id.img_back}) /* , R.id.fab*/
     public void onClick(View view) {
         switch (view.getId()) {
 
@@ -99,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 urlRequest = UrlRequest.getObject();
                 urlRequest.setContext(LoginActivity.this);
-                urlRequest.setUrl("http://yashodeepacademy.co.in/login_verification.php?username=" + username + "&password=" + password);
+                urlRequest.setUrl("http://192.168.0.22:8001/login_verification.php?username=" + username + "&password=" + password);
                 urlRequest.getResponse(new ServerCallback() {
                                            @Override
                                            public void onSuccess(String response) {
@@ -118,7 +118,14 @@ public class LoginActivity extends AppCompatActivity {
                                                        if (!(class1.equals("10"))) {
                                                            editor.putString("ID1", id);
                                                            editor.putString("CLASS1", class1);
+                                                           editor.commit();
                                                        }
+                                                       else {
+
+                                                           editor.putString("ID1",null);
+                                                           editor.commit();
+                                                       }
+
                                                        editor.putString("ID", id);
                                                        editor.putString("CLASS", class1);
                                                        editor.putString("USERNAME", name);
@@ -169,8 +176,8 @@ public class LoginActivity extends AppCompatActivity {
                 final AlertDialog alertDialog = builder.create();
                 alertDialog.show();
                 break;
-            case R.id.img_back:
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            case  R.id.img_back:
+                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
                 startActivity(intent);
         }
     }

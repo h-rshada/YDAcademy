@@ -37,7 +37,7 @@ public class ImpQuestions extends AppCompatActivity {
     ListView listImpQuestions;
     @InjectView(R.id.img_back)
     ImageView imageback;
-    Toolbar toolbar;
+    Toolbar toolbar ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,12 +90,12 @@ public class ImpQuestions extends AppCompatActivity {
         intent.putExtra("Sub", s + "");
         startActivity(intent);
     }
-
     @OnClick({R.id.img_back}) /* , R.id.fab*/
     public void onClick(View view) {
-        switch (view.getId()) {
+        switch (view.getId())
+        {
             case R.id.img_back:
-                Intent intent = new Intent(ImpQuestions.this, ChapterActivity.class);
+                Intent intent=new Intent(ImpQuestions.this,ChapterActivity.class);
                 startActivity(intent);
                 break;
         }
