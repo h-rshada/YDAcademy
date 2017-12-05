@@ -2,6 +2,7 @@ package com.example.user.ydacademy;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
@@ -9,12 +10,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -27,6 +30,7 @@ import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnClick;
 
 public class StudentStatforAdmin extends AppCompatActivity {
 
@@ -43,13 +47,17 @@ public class StudentStatforAdmin extends AppCompatActivity {
     @InjectView(R.id.cv)
     CardView cardView1;
     Button submit;
+    @InjectView(R.id.img_back)
+    ImageView imageback;
+    Toolbar toolbar ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_statfor_admin);
         ButterKnife.inject(this);
-        actionBarSetup();
-        recyclerView = (RecyclerView) findViewById(R.id.recyclePerformance);
+        toolbar = (Toolbar) findViewById(R.id.toolbar1);
+        setSupportActionBar(toolbar);
+        findViewById(R.id.recyclePerformance);
         recyclerView.setVisibility(View.GONE);
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         id = sp.getString("ID", null);
@@ -168,14 +176,15 @@ public class StudentStatforAdmin extends AppCompatActivity {
         recyclerView.setVisibility(View.GONE);
         cardView1.setVisibility(View.VISIBLE);
     }
-
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    private void actionBarSetup() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            android.support.v7.app.ActionBar ab = getSupportActionBar();
-            ab.setTitle("Yashodeep Academy");
-            ab.setSubtitle("Home/Admin Panel");
+    @OnClick({R.id.img_back}) /* , R.id.fab*/
+    public void onClick(View view) {
+        switch (view.getId())
+        {
+            case R.id.img_back:
+                Intent intent=new Intent(StudentStatforAdmin.this,LoginActivity.class);
+                startActivity(intent);
         }
+
     }
 
 }
