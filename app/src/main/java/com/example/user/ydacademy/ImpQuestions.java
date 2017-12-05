@@ -5,8 +5,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import org.json.JSONArray;
@@ -18,6 +21,7 @@ import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnClick;
 import butterknife.OnItemClick;
 
 public class ImpQuestions extends AppCompatActivity {
@@ -31,12 +35,17 @@ public class ImpQuestions extends AppCompatActivity {
     char s;
     @InjectView(R.id.listImpQuestions)
     ListView listImpQuestions;
+    @InjectView(R.id.img_back)
+    ImageView imageback;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imp_questions);
         ButterKnife.inject(this);
+        toolbar = (Toolbar) findViewById(R.id.toolbar1);
+        setSupportActionBar(toolbar);
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         class1 = sp.getString("CLASS", null);
         Log.d("Class***", class1);
@@ -80,5 +89,16 @@ public class ImpQuestions extends AppCompatActivity {
         intent.putExtra("pdfname", pdfname);
         intent.putExtra("Sub", s + "");
         startActivity(intent);
+    }
+
+    @OnClick({R.id.img_back}) /* , R.id.fab*/
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.img_back:
+                Intent intent = new Intent(ImpQuestions.this, ChapterActivity.class);
+                startActivity(intent);
+                break;
+        }
+
     }
 }

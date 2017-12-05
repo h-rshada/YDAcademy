@@ -7,63 +7,82 @@
     android:background="@drawable/contact2"
     tools:context="com.example.user.ydacademy.ContactUs">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="Contact Us"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#00ffffff"
+        android:orientation="vertical">
 
-                android:layout_centerInParent="true"
-                android:background="#00ffffff"
-                android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:background="#00ffffff"
+            android:text="Our Branches"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="200dp"
-                    android:background="#00ffffff"
-                    android:text="Our Branches"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:background="#00ffffff"
+            android:text="Branch1:"
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="3dp"
-                    android:background="#00ffffff"
-                    android:text="Branch1:"
-                    android:textSize="17dp"
-                    android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="#00ffffff"
+            android:text="Opp. Cosmos Bank, Near Choudhary Hotel, Dhurve Complex, Alandi, Pune-412105."
+            android:textSize="17dp"
+            android:textStyle="italic" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:background="#00ffffff"
-                    android:text="Opp. Cosmos Bank, Near Choudhary Hotel, Dhurve Complex, Alandi, Pune-412105."
-                    android:textSize="17dp"
-                    android:textStyle="italic" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:text="Branch2:"
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="3dp"
-                    android:text="Branch2:"
-                    android:textSize="17dp"
-                    android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Near MIT College, Dehu Phata, Alandi, Pune-412105."
+            android:textSize="17dp"
+            android:textStyle="italic" />
+    </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="Near MIT College, Dehu Phata, Alandi, Pune-412105."
-                    android:textSize="17dp"
-                    android:textStyle="italic" />
-            </LinearLayout>
-
-    </RelativeLayout>
+</RelativeLayout>
 

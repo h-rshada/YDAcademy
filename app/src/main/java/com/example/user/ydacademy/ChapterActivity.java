@@ -1,15 +1,16 @@
 package com.example.user.ydacademy;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import org.json.JSONArray;
@@ -21,12 +22,16 @@ import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnClick;
 import butterknife.OnItemClick;
 
 public class ChapterActivity extends AppCompatActivity {
 
     @InjectView(R.id.listChapter)
     ListView listChapters;
+    @InjectView(R.id.img_back)
+    ImageView imageback;
+    Toolbar toolbar;
     /* @InjectView(R.id.txtListChapters)TextView txtListChapter;*/
     UrlRequest urlRequest;
     String exam;
@@ -43,8 +48,10 @@ public class ChapterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter);
-        actionBarSetup();
+
         ButterKnife.inject(this);
+        toolbar = (Toolbar) findViewById(R.id.toolbar1);
+        setSupportActionBar(toolbar);
         chapters = new ArrayList<>();
         exam = getIntent().getStringExtra("Exam");
         subject = getIntent().getStringExtra("Subject");
@@ -114,12 +121,14 @@ public class ChapterActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    private void actionBarSetup() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            android.support.v7.app.ActionBar ab = getSupportActionBar();
-            ab.setTitle("Yashodeep Academy");
-            ab.setSubtitle("Home/Chapters");
+    @OnClick({R.id.img_back}) /* , R.id.fab*/
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.img_back:
+                Intent intent = new Intent(ChapterActivity.this, TabActivity.class);
+                startActivity(intent);
+                break;
         }
+
     }
 }

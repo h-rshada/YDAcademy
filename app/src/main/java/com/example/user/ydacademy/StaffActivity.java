@@ -1,12 +1,11 @@
 package com.example.user.ydacademy;
 
-import android.annotation.TargetApi;
 import android.app.ProgressDialog;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 
@@ -30,12 +29,14 @@ public class StaffActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     ProgressDialog loading;
 
+    Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_staff);
         ButterKnife.inject(this);
-        actionBarSetup();
+
         loading = ProgressDialog.show(StaffActivity.this, "Loading", "Please wait.....", false, false);
 
         final List<DataStaff> data = new ArrayList<>();
@@ -74,12 +75,6 @@ public class StaffActivity extends AppCompatActivity {
         );
 
     }
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    private void actionBarSetup() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            android.support.v7.app.ActionBar ab = getSupportActionBar();
-            ab.setTitle("Yashodeep Academy");
-            ab.setSubtitle("Home/Staff");
-        }
-    }
+
+
 }
