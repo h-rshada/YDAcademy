@@ -71,7 +71,6 @@ public class ImpQuestions extends AppCompatActivity {
                                        } catch (JSONException e1) {
                                            e1.printStackTrace();
                                        }
-
                                        Log.d("Chapters", chapters.toString() + "");
                                        adapter = new ArrayAdapter(ImpQuestions.this, android.R.layout.simple_list_item_1, chapters);
                                        listImpQuestions.setAdapter(adapter);
@@ -80,7 +79,6 @@ public class ImpQuestions extends AppCompatActivity {
                                }
         );
     }
-
     @OnItemClick(R.id.listImpQuestions)
     public void onItemClick(int position) {
         Log.d("***", position + "");

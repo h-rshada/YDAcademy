@@ -95,7 +95,7 @@ public class MainActivity extends ActionBarActivity
         setContentView(R.layout.activity_main);
         ButterKnife.inject(this);
         fragmentManager = getSupportFragmentManager();
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 6; i++) {
             TextSliderView textSliderView = new TextSliderView(this);
             textSliderView.image("http://yashodeepacademy.co.in/slider/" + i + ".jpg");
             //  textSliderView.image("http://orientalbirdimages.org/images/data/striated_laughingthrush_0001.jpg");

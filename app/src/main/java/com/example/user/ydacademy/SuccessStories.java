@@ -1,8 +1,6 @@
 package com.example.user.ydacademy;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -27,7 +25,7 @@ public class SuccessStories extends AppCompatActivity {
         ButterKnife.inject(this);
     }
 
-    @OnClick({R.id.img_back}) /* , R.id.fab*/
+    @OnClick({R.id.img_back})
     public void onClick(View view) {
         switch (view.getId())
         {

@@ -1,10 +1,8 @@
 package com.example.user.ydacademy;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
@@ -57,7 +55,7 @@ public class StudentStatforAdmin extends AppCompatActivity {
         ButterKnife.inject(this);
         toolbar = (Toolbar) findViewById(R.id.toolbar1);
         setSupportActionBar(toolbar);
-        findViewById(R.id.recyclePerformance);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclePerformance);
         recyclerView.setVisibility(View.GONE);
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         id = sp.getString("ID", null);
@@ -75,7 +73,7 @@ public class StudentStatforAdmin extends AppCompatActivity {
                 if (spinnerClass.getSelectedItem() != null && spinnerClass.getSelectedItem() != "--Select class--") {
                     urlRequest = UrlRequest.getObject();
                     urlRequest.setContext(StudentStatforAdmin.this);
-                    urlRequest.setUrl("http://192.168.0.22:8001/fetchstudentstatadmin.php?student_id=" + name + "&class=" + class1);
+                    urlRequest.setUrl("http://yashodeepacademy.co.in/fetchstudentstatadmin.php?student_id=" + name + "&class=" + class1);
                     urlRequest.getResponse(new ServerCallback() {
                                                @Override
                                                public void onSuccess(String response) {

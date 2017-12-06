@@ -99,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 urlRequest = UrlRequest.getObject();
                 urlRequest.setContext(LoginActivity.this);
-                urlRequest.setUrl("http://192.168.0.22:8003/login_verification.php?username=" + username + "&password=" + password);
+                urlRequest.setUrl("http://yashodeepacademy.co.in/login_verification.php?username=" + username + "&password=" + password);
                 urlRequest.getResponse(new ServerCallback() {
                                            @Override
                                            public void onSuccess(String response) {

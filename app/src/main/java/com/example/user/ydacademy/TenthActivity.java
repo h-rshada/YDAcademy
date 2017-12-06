@@ -55,7 +55,6 @@ public class TenthActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         rippleView1.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
