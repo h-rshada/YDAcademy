@@ -115,7 +115,7 @@ public class TestActivity extends AppCompatActivity {
                                     answerKey += "0";
 
                                 }
-                                data = userans + " " + answerKey;
+
                                 if (count < 50) {
                                     AlertDialog.Builder alertDialog = new AlertDialog.Builder(TestActivity.this);
 
@@ -125,6 +125,9 @@ public class TestActivity extends AppCompatActivity {
                                             "Yes",
                                             new DialogInterface.OnClickListener() {
                                                 public void onClick(DialogInterface dialog, int id) {
+                                                    userans = userans.substring(0, 50);
+                                                    Log.d("substring", userans);
+                                                    data = userans + " " + answerKey;
                                                     callIntent();
                                                     dialog.cancel();
 
@@ -139,10 +142,12 @@ public class TestActivity extends AppCompatActivity {
                                     });
                                     alertDialog.show();
                                 } else {
+                                    userans = userans.substring(0, 50);
+                                    data = userans + " " + answerKey;
+                                    Log.d("substring", userans);
+                                    Log.d("substringl", userans.length() + "");
                                     callIntent();
                                 }
-
-
 
                             } catch (JSONException e) {
                                 e.printStackTrace();

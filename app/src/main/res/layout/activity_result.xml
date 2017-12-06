@@ -60,7 +60,8 @@
                     android:layout_marginTop="50dp"
                     android:background="@drawable/shape"
                     android:padding="5dp"
-                    android:text="Correct questions"></TextView>
+                    android:text="Correct questions"
+                    android:textColor="@color/black"></TextView>
 
                 <TextView
                     android:id="@+id/txt_Correct"
@@ -80,7 +81,8 @@
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/shape"
                     android:padding="5dp"
-                    android:text="Incorrect questions">
+                    android:text="Incorrect questions"
+                    android:textColor="@color/black">
 
                 </TextView>
 
@@ -101,7 +103,8 @@
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/shape"
                     android:padding="5dp"
-                    android:text="Number of attended questions"></TextView>
+                    android:text="Number of attended questions"
+                    android:textColor="@color/black"></TextView>
 
                 <TextView
                     android:id="@+id/txt_answer"
@@ -120,7 +123,8 @@
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/shape"
                     android:padding="5dp"
-                    android:text="Number of unattended questions"></TextView>
+                    android:text="Number of unattended questions"
+                    android:textColor="@color/black"></TextView>
 
                 <TextView
                     android:id="@+id/txt_unanswer"
