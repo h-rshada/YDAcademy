@@ -10,8 +10,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daea1603-2c64-4c45-a6f5-72fa097dc047" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_animated_vector_drawable_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_animated_vector_drawable_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_appcompat_v7_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_appcompat_v7_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_cardview_v7_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_cardview_v7_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_constraint_constraint_layout_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_constraint_constraint_layout_1_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_design_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_design_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_recyclerview_v7_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_recyclerview_v7_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_compat_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_compat_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_ui_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_ui_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_utils_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_utils_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_fragment_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_fragment_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_media_compat_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_media_compat_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_v4_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_v4_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_vector_drawable_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_vector_drawable_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_espresso_espresso_core_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_espresso_espresso_core_2_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_espresso_espresso_idling_resource_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_espresso_espresso_idling_resource_2_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_exposed_instrumentation_api_publish_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_exposed_instrumentation_api_publish_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_rules_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_rules_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_runner_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_runner_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_transition_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_transition_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_daimajia_slider_library_1_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_daimajia_slider_library_1_1_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_barteksc_android_pdf_viewer_2_7_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_barteksc_android_pdf_viewer_2_7_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_barteksc_pdfium_android_1_7_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_barteksc_pdfium_android_1_7_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_coyarzun89_fabtransitionactivity_0_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_coyarzun89_fabtransitionactivity_0_2_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_jetradarmobile_desertplaceholder_desertplaceholder_1_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_jetradarmobile_desertplaceholder_desertplaceholder_1_2_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_ozodrukh_CircularReveal_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_ozodrukh_CircularReveal_1_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_traex_rippleeffect_library_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_traex_rippleeffect_library_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_mcxiaoke_volley_library_aar_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_mcxiaoke_volley_library_aar_1_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_oguzdev_CircularFloatingActionMenu_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_oguzdev_CircularFloatingActionMenu_1_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_phelat_fun_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_phelat_fun_1_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/de_hdodenhof_circleimageview_1_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/de_hdodenhof_circleimageview_1_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/me_biubiubiu_justifytext_library_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/me_biubiubiu_justifytext_library_1_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/TestActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/TestActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,17 +90,17 @@
       <file leaf-file-name="TestActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/TestActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="414">
               <caret line="196" column="33" lean-forward="false" selection-start-line="196" selection-start-column="33" selection-end-line="196" selection-end-column="33" />
               <folding>
                 <element signature="e#5102#6200#0" expanded="true" />
                 <element signature="e#6199#6200#0" expanded="true" />
-                <marker date="1512551556561" expanded="false" signature="3473:3586" ph="(response) → {" />
-                <marker date="1512551556561" expanded="false" signature="6924:6947" ph="}" />
-                <marker date="1512551556561" expanded="false" signature="8300:8422" ph="(v) → {" />
-                <marker date="1512551556561" expanded="false" signature="8745:8775" ph="}" />
-                <marker date="1512551556561" expanded="false" signature="10458:10482" ph=" { " />
-                <marker date="1512551556561" expanded="false" signature="10509:10519" ph=" }" />
+                <marker date="1512552571594" expanded="false" signature="3473:3586" ph="(response) → {" />
+                <marker date="1512552571594" expanded="false" signature="6924:6947" ph="}" />
+                <marker date="1512552571594" expanded="false" signature="8300:8422" ph="(v) → {" />
+                <marker date="1512552571594" expanded="false" signature="8745:8775" ph="}" />
+                <marker date="1512552571594" expanded="false" signature="10458:10482" ph=" { " />
+                <marker date="1512552571594" expanded="false" signature="10509:10519" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -71,7 +112,8 @@
             <state relative-caret-position="-656">
               <caret line="60" column="43" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="43" />
               <folding>
-                <marker date="1512549680654" expanded="true" signature="9104:9121" ph="{...}" />
+                <marker date="1512551863362" expanded="true" signature="9104:9144" ph="{...}" />
+                <marker date="1512551863362" expanded="true" signature="9192:9357" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -2210,6 +2252,227 @@
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_animated_vector_drawable_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_appcompat_v7_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_cardview_v7_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_constraint_constraint_layout_1_0_2.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_design_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_recyclerview_v7_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_support_compat_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_ui_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_utils_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_support_fragment_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_support_media_compat_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_support_v4_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_support_vector_drawable_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_test_espresso_espresso_core_2_2_2.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_test_espresso_espresso_idling_resource_2_2_2.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_test_exposed_instrumentation_api_publish_0_5.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_test_rules_0_5.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_test_runner_0_5.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_android_support_transition_26_0_0_alpha1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_daimajia_slider_library_1_1_5.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_github_barteksc_android_pdf_viewer_2_7_0.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_github_barteksc_pdfium_android_1_7_0.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_github_coyarzun89_fabtransitionactivity_0_2_0.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_github_jetradarmobile_desertplaceholder_desertplaceholder_1_2_4.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_github_ozodrukh_CircularReveal_1_3_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_github_traex_rippleeffect_library_1_3.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_mcxiaoke_volley_library_aar_1_0_0.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_oguzdev_CircularFloatingActionMenu_1_0_2.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/com_phelat_fun_1_0_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/de_hdodenhof_circleimageview_1_3_0.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/me_biubiubiu_justifytext_library_1_1.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/app.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/AboutUs.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/LoginActivity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/MainActivity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/StaffActivity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/res/layout/activity_about_us.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/res/layout/activity_our_achievers.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/res/layout/activity_performance.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/res/layout/activity_staff.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/res/layout/activity_start_test.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/res/layout/activity_student_statfor_admin.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/res/layout/activity_success_stories.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/res/layout/content_main.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/res/values/colors.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/local.properties</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/res/drawable/stats.jpg</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-32-26-203.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-32-26-203.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-32-48-048.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-32-48-048.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-33-57-786.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-33-57-786.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-39-54-411.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-39-54-411.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-50-11-008.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-50-11-008.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-57-46-075.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-57-46-075.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-59-55-942.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-11-59-55-942.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-00-31-249.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-00-31-249.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-04-57-656.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-04-57-656.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-27-23-518.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-27-23-518.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-35-03-135.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-35-03-135.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-35-21-819.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-35-21-819.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-37-30-578.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-37-30-578.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-39-12-410.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-39-12-410.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-46-38-693.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-46-38-693.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-54-34-921.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-12-54-34-921.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-13-00-57-927.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-13-00-57-927.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-13-05-23-554.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-13-05-23-554.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-13-19-29-150.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-13-19-29-150.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-13-24-43-992.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-13-24-43-992.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-14-15-12-648.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-14-15-12-648.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-14-44-15-523.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-14-44-15-523.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-15-12-41-635.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-15-12-41-635.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-15-12-45-029.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-05-15-12-45-029.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-06-10-48-49-410.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-06-10-48-49-410.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-06-12-38-31-947.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-06-12-38-31-947.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-06-14-02-58-975.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-06-14-02-58-975.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-06-14-07-43-989.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-06-14-07-43-989.rawproto</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-06-14-08-52-397.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/build/android-profile/profile-2017-12-06-14-08-52-397.rawproto</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -2293,7 +2556,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512551625797" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512552571742" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2341,7 +2604,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512551625797" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512552571742" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2503,7 +2766,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512551625798" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512552571744" />
       </method>
     </configuration>
     <list size="1">
@@ -2574,7 +2837,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512551273428</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updated count for question set isn't available">
+      <created>1512551686934</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1512551686934</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2590,7 +2860,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35053763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2677,7 +2947,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="1. Back button added on activity" />
     <MESSAGE value="added Dialog on submit button" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Dialog on submit button" />
+    <MESSAGE value="updated count for question set isn't available" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated count for question set isn't available" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -3110,7 +3381,8 @@
         <state relative-caret-position="-656">
           <caret line="60" column="43" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="43" />
           <folding>
-            <marker date="1512549680654" expanded="true" signature="9104:9121" ph="{...}" />
+            <marker date="1512551863362" expanded="true" signature="9104:9144" ph="{...}" />
+            <marker date="1512551863362" expanded="true" signature="9192:9357" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -3135,17 +3407,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/TestActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="414">
           <caret line="196" column="33" lean-forward="false" selection-start-line="196" selection-start-column="33" selection-end-line="196" selection-end-column="33" />
           <folding>
             <element signature="e#5102#6200#0" expanded="true" />
             <element signature="e#6199#6200#0" expanded="true" />
-            <marker date="1512551556561" expanded="false" signature="3473:3586" ph="(response) → {" />
-            <marker date="1512551556561" expanded="false" signature="6924:6947" ph="}" />
-            <marker date="1512551556561" expanded="false" signature="8300:8422" ph="(v) → {" />
-            <marker date="1512551556561" expanded="false" signature="8745:8775" ph="}" />
-            <marker date="1512551556561" expanded="false" signature="10458:10482" ph=" { " />
-            <marker date="1512551556561" expanded="false" signature="10509:10519" ph=" }" />
+            <marker date="1512552571594" expanded="false" signature="3473:3586" ph="(response) → {" />
+            <marker date="1512552571594" expanded="false" signature="6924:6947" ph="}" />
+            <marker date="1512552571594" expanded="false" signature="8300:8422" ph="(v) → {" />
+            <marker date="1512552571594" expanded="false" signature="8745:8775" ph="}" />
+            <marker date="1512552571594" expanded="false" signature="10458:10482" ph=" { " />
+            <marker date="1512552571594" expanded="false" signature="10509:10519" ph=" }" />
           </folding>
         </state>
       </provider>
