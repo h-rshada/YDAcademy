@@ -121,7 +121,6 @@ public class LoginActivity extends AppCompatActivity {
                                                            editor.commit();
                                                        }
                                                        else {
-
                                                            editor.putString("ID1",null);
                                                            editor.commit();
                                                        }

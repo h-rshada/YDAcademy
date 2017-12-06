@@ -313,7 +313,8 @@ public class MainActivity extends ActionBarActivity
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
 //        getMenuInflater().inflate(R.menu.activity_main_drawer, menu);
@@ -331,7 +332,6 @@ public class MainActivity extends ActionBarActivity
         if (id == R.id.action_login) {
             itemname = item.getTitle().toString();
             Log.d("ItemName", itemname);
-
             if (itemname.equals("Login")) {
                 intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivityForResult(intent, 100);
