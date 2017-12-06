@@ -13,43 +13,29 @@
         android:minHeight="?attr/actionBarSize"
         android:titleTextColor="#ffff">
 
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="onClick"
+            android:src="@drawable/leftarrow" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Our Achievers"
-            android:gravity="center_horizontal"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"
-            android:layout_gravity="center"/>
-
-    </android.support.v7.widget.Toolbar>
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar1"
-        android:layout_width="fill_parent"
-        android:layout_height="58dp"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:titleTextColor="#ffff">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
             android:gravity="center_horizontal"
             android:text="Our Achievers"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="15dp" />
 
     </android.support.v7.widget.Toolbar>
+
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/Liststudent"
-        android:layout_marginTop="60dp"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="60dp"

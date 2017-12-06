@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimaryDark">#fc0000</color>
-    <color name="colorPrimary">#ff4aa5</color>
+    <color name="colorPrimary">#ff000000</color>
     <color name="colorAccent">#f11212</color>
     <color name="white">#fdfdfd</color>
     <color name="Activityback">#e9fcfcfc</color>
@@ -41,6 +41,4 @@
     <color name="icon2">#2B6E8C</color>
     <color name="icon3">#74C35C</color>
     <color name="icon4">#3A95C0</color>
-
-
 </resources>

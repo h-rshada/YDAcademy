@@ -393,8 +393,8 @@ public class MainActivity extends ActionBarActivity
     private void actionBarSetup() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             android.support.v7.app.ActionBar ab = getSupportActionBar();
-            ab.setTitle("Yashodeep Academy");
-            ab.setSubtitle("Home");
+            ab.setTitle("Home");
+
         }
     }
     @Override

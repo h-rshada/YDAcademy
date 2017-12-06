@@ -177,6 +177,7 @@ public class LoginActivity extends AppCompatActivity {
             case  R.id.img_back:
                 Intent intent=new Intent(LoginActivity.this,MainActivity.class);
                 startActivity(intent);
+                break;
         }
     }
 

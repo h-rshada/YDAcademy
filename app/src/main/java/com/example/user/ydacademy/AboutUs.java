@@ -1,14 +1,11 @@
 package com.example.user.ydacademy;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +20,8 @@ public class AboutUs extends AppCompatActivity {
 
     @InjectView(R.id.text)
     TextView textView;
+    @InjectView(R.id.img_back)
+    ImageView imageback;
 
     Toolbar toolbar ;
     @Override
@@ -41,4 +40,14 @@ public class AboutUs extends AppCompatActivity {
 
     }
 
+    @OnClick({R.id.img_back}) /* , R.id.fab*/
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.img_back:
+                Intent intent = new Intent(AboutUs.this, MainActivity.class);
+                startActivity(intent);
+                break;
+        }
+
+    }
 }

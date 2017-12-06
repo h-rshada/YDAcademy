@@ -1,9 +1,7 @@
 package com.example.user.ydacademy;
 
-import android.annotation.TargetApi;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -33,7 +31,8 @@ public class StaffActivity extends AppCompatActivity {
     List<DataStaff> data;
     RecyclerView recyclerView;
     ProgressDialog loading;
-
+    @InjectView(R.id.img_back)
+    ImageView imageback;
     Toolbar toolbar ;
 
     @Override
@@ -81,5 +80,14 @@ public class StaffActivity extends AppCompatActivity {
 
     }
 
+    @OnClick({R.id.img_back}) /* , R.id.fab*/
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.img_back:
+                Intent intent = new Intent(StaffActivity.this, MainActivity.class);
+                startActivity(intent);
+                break;
+        }
 
+    }
 }

@@ -12,46 +12,30 @@
         android:minHeight="?attr/actionBarSize"
         android:titleTextColor="#ffff">
 
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
+
+            android:layout_marginStart="16dp"
+            android:src="@drawable/leftarrow" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="Our STAFF"
-            android:textColor="@color/colorWhite"
-            android:gravity="center_horizontal"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_gravity="center"/>
+            android:textColor="@color/colorWhite" />
 
     </android.support.v7.widget.Toolbar>
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar1"
-        android:layout_width="fill_parent"
-        android:layout_height="58dp"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:titleTextColor="#ffff">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center_horizontal"
-            android:text="Our STAFF"
-            android:textColor="@color/colorWhite"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-    </android.support.v7.widget.Toolbar>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/Liststaff"
-        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="60dp"
+
         android:paddingTop="0dp" />
 
 </RelativeLayout>

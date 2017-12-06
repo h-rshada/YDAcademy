@@ -27,37 +27,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Start Test"
-            android:gravity="center_horizontal"
-            android:textSize="20dp"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold"
-            android:layout_gravity="center"/>
-
-    </android.support.v7.widget.Toolbar>
-
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar1"
-        android:layout_width="fill_parent"
-        android:layout_height="58dp"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:titleTextColor="#ffff">
-
-        <ImageView
-            android:id="@+id/img_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/toolbar1"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="9dp"
-            android:layout_marginStart="16dp"
-            android:src="@drawable/leftarrow" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center_horizontal"
             android:text="Start Test"
@@ -139,7 +108,9 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="50dp"
                 android:text="\u25CF"
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -148,7 +119,9 @@
                 android:layout_marginLeft="18dp"
                 android:layout_marginTop="50dp"
                 android:text="Total number of questions : 50"
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
 
             <TextView
@@ -158,7 +131,9 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="80dp"
                 android:text="\u25CF"
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -167,7 +142,9 @@
                 android:layout_marginLeft="18dp"
                 android:layout_marginTop="80dp"
                 android:text="Time alloted : 1 minute to each question."
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
 
             <TextView
@@ -177,7 +154,9 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="110dp"
                 android:text="\u25CF"
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -186,7 +165,9 @@
                 android:layout_marginLeft="18dp"
                 android:layout_marginTop="110dp"
                 android:text="Each question carry 1 mark, no negative marks."
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -195,7 +176,9 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="145dp"
                 android:text="\u25CF"
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -204,7 +187,9 @@
                 android:layout_marginLeft="18dp"
                 android:layout_marginTop="145dp"
                 android:text="Test will auto submit when time out."
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -213,7 +198,9 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="170dp"
                 android:text="\u25CF"
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -223,7 +210,9 @@
                 android:layout_marginLeft="18dp"
                 android:layout_marginTop="170dp"
                 android:text="Once test started you can't go back."
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -232,7 +221,9 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="200dp"
                 android:text="\u25CF"
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -242,7 +233,9 @@
                 android:layout_marginLeft="18dp"
                 android:layout_marginTop="200dp"
                 android:text="Best luck..!"
-                android:textSize="16dp"></TextView>
+                android:textSize="16dp">
+
+            </TextView>
 
         </android.support.v7.widget.CardView>
     </LinearLayout>

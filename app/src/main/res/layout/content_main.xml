@@ -354,7 +354,7 @@
                             android:layout_gravity="center"
                             android:layout_marginTop="0dp"
                             android:layout_weight="1"
-                            android:background="@drawable/success"
+                            android:background="@drawable/stats"
                             android:textColor="@color/white"
                             android:textSize="15dp" />
                     </LinearLayout>
