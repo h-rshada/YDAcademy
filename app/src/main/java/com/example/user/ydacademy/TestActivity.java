@@ -157,7 +157,7 @@ public class TestActivity extends AppCompatActivity {
     public void load_image()
     {
 
-        Glide.with(getApplicationContext()).load("http://192.168.0.22:8002/routes/" + class1 + "/" + es + chapter + "/q" + (count + 1) + ".PNG").asBitmap().override(600, 600)
+        Glide.with(getApplicationContext()).load("http://yashodeepacademy.co.in/" + class1 + "/" + es + chapter + "/q" + (count + 1) + ".PNG").asBitmap().override(600, 600)
                    .placeholder(null).listener(new RequestListener<String, Bitmap>() {
                @Override
                public boolean onException(Exception e, String model, Target<Bitmap> target, boolean isFirstResource) {

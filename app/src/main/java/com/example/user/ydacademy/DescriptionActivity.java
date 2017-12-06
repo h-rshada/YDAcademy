@@ -55,7 +55,7 @@ public class DescriptionActivity extends AppCompatActivity {
 
         for (int i = 0; i < 50; i++) {
             DataResult testData = new DataResult();
-            testData.imageURL = "http://192.168.0.22:8002/routes/" + class1 + "/" + es + chapter + "/q" + (i + 1) + ".PNG";
+            testData.imageURL = "http://yashodeepacademy.co.in/" + class1 + "/" + es + chapter + "/q" + (i + 1) + ".PNG";
             testData.userans = arr[0].charAt(i);
             testData.result = arr[1].charAt(i);
             testData.description_url = "http://yashodeepacademy.co.in/" + class1 + "/" + es + chapter + "/a" + (i + 1) + ".PNG";
