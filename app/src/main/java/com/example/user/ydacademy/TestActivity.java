@@ -116,37 +116,31 @@ public class TestActivity extends AppCompatActivity {
 
                                 }
                                 data = userans + " " + answerKey;
-                                AlertDialog.Builder alertDialog = new AlertDialog.Builder(TestActivity.this);
+                                if (count < 50) {
+                                    AlertDialog.Builder alertDialog = new AlertDialog.Builder(TestActivity.this);
 
-                                alertDialog.setMessage("Do you really want to submit test.. ");
+                                    alertDialog.setMessage("Do you really want to submit test.. ");
 
-                                alertDialog.setPositiveButton(
-                                        "Yes",
-                                        new DialogInterface.OnClickListener() {
-                                            public void onClick(DialogInterface dialog, int id) {
-                                                Intent intent = new Intent(TestActivity.this, ResultActivity.class);
-                                                intent.putExtra("data", data);
-                                                intent.putExtra("Class", class1);
-                                                intent.putExtra("Subject", subject);
-                                                intent.putExtra("Exam", exam);
-                                                intent.putExtra("ES", es);
-                                                intent.putExtra("Chapter", chapter);
-                                                TestActivity.this.finish();
-                                                startActivity(intent);
-                                                finish();
-                                                dialog.cancel();
+                                    alertDialog.setPositiveButton(
+                                            "Yes",
+                                            new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int id) {
+                                                    callIntent();
+                                                    dialog.cancel();
 
-                                            }
-                                        });
+                                                }
+                                            });
 
-                                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                    alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
 
-                                    }
-                                });
-
-                                alertDialog.show();
+                                        }
+                                    });
+                                    alertDialog.show();
+                                } else {
+                                    callIntent();
+                                }
 
 
 
@@ -259,6 +253,19 @@ public class TestActivity extends AppCompatActivity {
         }
     }
 
+    public void callIntent() {
+        Intent intent = new Intent(TestActivity.this, ResultActivity.class);
+        intent.putExtra("data", data);
+        intent.putExtra("Class", class1);
+        intent.putExtra("Subject", subject);
+        intent.putExtra("Exam", exam);
+        intent.putExtra("ES", es);
+        intent.putExtra("Chapter", chapter);
+        TestActivity.this.finish();
+        startActivity(intent);
+        finish();
+    }
+
     public class Mycountdowntimer extends CountDownTimer {
         public Mycountdowntimer(long starttime, long interval)
 
@@ -280,10 +287,10 @@ public class TestActivity extends AppCompatActivity {
                 btn_submit.performClick();
             else {
                 check_result();
-                    load_image();
+                load_image();
             }
 
         }
-    }
 
+    }
 }
