@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -23,7 +24,7 @@ import java.util.List;
 import butterknife.ButterKnife;
 
 public class Performance extends AppCompatActivity {
-
+    Toolbar toolbar ;
     UrlRequest urlRequest;
     AdapterPerformance adapter;
     List<DataPerformance> data;
@@ -36,7 +37,8 @@ public class Performance extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_performance);
         ButterKnife.inject(this);
-        actionBarSetup();
+        toolbar = (Toolbar) findViewById(R.id.toolbar1);
+        setSupportActionBar(toolbar);
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         id = sp.getString("ID1", null);
         class1 = sp.getString("CLASS1", null);
@@ -55,7 +57,8 @@ public class Performance extends AppCompatActivity {
                                            List<DataPerformance> data = new ArrayList<>();
                                            try {
                                                JSONArray jsonArray = new JSONArray(response);
-                                               for (int i = 0; i < jsonArray.length(); i++) {
+                                               for (int i = 0; i < jsonArray.length(); i++)
+                                               {
                                                    DataPerformance dataPerformance = new DataPerformance();
                                                    JSONObject jsonObject = jsonArray.getJSONObject(i);
                                                    exam1 = jsonObject.getString("examcode");

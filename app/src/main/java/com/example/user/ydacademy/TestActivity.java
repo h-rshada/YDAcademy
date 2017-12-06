@@ -130,7 +130,7 @@ public class TestActivity extends AppCompatActivity {
 
                             }
                         } else {
-                            Toast.makeText(TestActivity.this, "insert answer entry in DB", Toast.LENGTH_LONG).show();
+                            //Toast.makeText(TestActivity.this, "insert answer entry in DB", Toast.LENGTH_LONG).show();
                         }
 
 

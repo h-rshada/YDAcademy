@@ -10,6 +10,7 @@ import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.Toolbar;
 import android.transition.Explode;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,6 +19,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -46,6 +48,9 @@ public class LoginActivity extends AppCompatActivity {
     TextView txtForgotPassword;
     @InjectView(R.id.relativeLogin)
     RelativeLayout relativeLayout;
+    @InjectView(R.id.img_back)
+    ImageView imageback;
+    Toolbar toolbar ;
     UrlRequest urlRequest;
     String username, password, name, id, class1;
 
@@ -55,6 +60,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        toolbar = (Toolbar) findViewById(R.id.toolbar1);
+        setSupportActionBar(toolbar);
         try {
             File f = new File("/data/data/com.xoxytech.ostello/shared_prefs/YourSharedPreference.xml");
             if (f.exists()) {
@@ -75,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    @OnClick({R.id.btnLogin, R.id.txtForgotPassword,}) /* , R.id.fab*/
+    @OnClick({R.id.btnLogin, R.id.txtForgotPassword,R.id.img_back}) /* , R.id.fab*/
     public void onClick(View view) {
         switch (view.getId()) {
 
@@ -92,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 urlRequest = UrlRequest.getObject();
                 urlRequest.setContext(LoginActivity.this);
-                urlRequest.setUrl("http://192.168.0.22:8001/login_verification.php?username=" + username + "&password=" + password);
+                urlRequest.setUrl("http://192.168.0.22:8003/login_verification.php?username=" + username + "&password=" + password);
                 urlRequest.getResponse(new ServerCallback() {
                                            @Override
                                            public void onSuccess(String response) {
@@ -114,11 +121,9 @@ public class LoginActivity extends AppCompatActivity {
                                                            editor.commit();
                                                        }
                                                        else {
-
                                                            editor.putString("ID1",null);
                                                            editor.commit();
                                                        }
-
                                                        editor.putString("ID", id);
                                                        editor.putString("CLASS", class1);
                                                        editor.putString("USERNAME", name);
@@ -169,6 +174,9 @@ public class LoginActivity extends AppCompatActivity {
                 final AlertDialog alertDialog = builder.create();
                 alertDialog.show();
                 break;
+            case  R.id.img_back:
+                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(intent);
         }
     }
 

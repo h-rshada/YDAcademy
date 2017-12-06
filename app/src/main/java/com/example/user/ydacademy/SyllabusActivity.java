@@ -3,23 +3,31 @@ package com.example.user.ydacademy;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnClick;
 
 public class SyllabusActivity extends AppCompatActivity {
     /*@InjectView(R.id.listChapters)
     ListView listView;*/
     @InjectView(R.id.webView)
     WebView webView1;
+    @InjectView(R.id.img_back)
+    ImageView imageback;
+    Toolbar toolbar ;
     UrlRequest urlRequest;
     SharedPreferences sp;
     private ProgressDialog loading;
@@ -30,7 +38,8 @@ public class SyllabusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_syllabus);
         ButterKnife.inject(this);
-        actionBarSetup();
+        toolbar = (Toolbar) findViewById(R.id.toolbar1);
+        setSupportActionBar(toolbar);
         loading = new ProgressDialog(SyllabusActivity.this);
 
         urlRequest = UrlRequest.getObject();
@@ -78,14 +87,16 @@ public class SyllabusActivity extends AppCompatActivity {
         Log.d("PDF", "https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/syllabus/" + class1 + exam + subject + ".pdf");
     }
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    private void actionBarSetup() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            android.support.v7.app.ActionBar ab = getSupportActionBar();
-            ab.setTitle("Yashodeep Academy");
-            ab.setSubtitle("Home/Syllabus");
+    @OnClick({R.id.img_back}) /* , R.id.fab*/
+    public void onClick(View view) {
+        switch (view.getId())
+        {
+            case R.id.img_back:
+                Intent intent=new Intent(SyllabusActivity.this,TabActivity.class);
+                startActivity(intent);
+                break;
         }
-    }
 
+    }
 
 }

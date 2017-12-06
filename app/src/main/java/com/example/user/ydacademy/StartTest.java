@@ -7,11 +7,13 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -27,6 +29,9 @@ public class StartTest extends AppCompatActivity {
     @InjectView(R.id.btn_startTest)Button start_test;
     String exam, subject, class1, es, id, chapter;
     int count;
+    @InjectView(R.id.img_back)
+    ImageView imageback;
+    Toolbar toolbar ;
     UrlRequest urlRequest;
     SharedPreferences sp;
 
@@ -35,7 +40,8 @@ public class StartTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_test);
         ButterKnife.inject(this);
-
+        toolbar = (Toolbar) findViewById(R.id.toolbar1);
+        setSupportActionBar(toolbar);
         exam = getIntent().getStringExtra("Exam");
         subject = getIntent().getStringExtra("Subject");
         class1 = getIntent().getStringExtra("Class");
@@ -44,7 +50,7 @@ public class StartTest extends AppCompatActivity {
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         class1 = sp.getString("CLASS", null);
         id = sp.getString("ID", null);
-        actionBarSetup();
+
         Log.d("Class***", class1);
         Log.d("subject", subject);
         Log.d("ES*****", es);
@@ -53,7 +59,7 @@ public class StartTest extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.btn_startTest})
+    @OnClick({R.id.btn_startTest,R.id.img_back})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_startTest:
@@ -95,15 +101,12 @@ public class StartTest extends AppCompatActivity {
                                        }
                 );
                 break;
+            case R.id.img_back:
+                Intent intent=new Intent(StartTest.this,TabActivity.class);
+                startActivity(intent);
+                break;
         }
     }
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    private void actionBarSetup() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            android.support.v7.app.ActionBar ab = getSupportActionBar();
-            ab.setTitle("Yashodeep Academy");
-            ab.setSubtitle("Home/Start Test");
-        }
-    }
+
 }
