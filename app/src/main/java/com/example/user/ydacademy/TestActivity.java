@@ -194,7 +194,7 @@ public class TestActivity extends AppCompatActivity {
                        count++;
                        c = 0;
                    }
-                   if (count == 3) {
+                   if (count == 2) {
                        state = 1;
                        DesertPlaceholder desertPlaceholder = (DesertPlaceholder) findViewById(R.id.placeholder);
                        desertPlaceholder.setVisibility(View.VISIBLE);

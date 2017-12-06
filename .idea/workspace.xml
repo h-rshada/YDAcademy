@@ -10,20 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daea1603-2c64-4c45-a6f5-72fa097dc047" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YDAcademy.iml" afterPath="$PROJECT_DIR$/YDAcademy.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/TestActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/TestActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,17 +49,17 @@
       <file leaf-file-name="TestActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/TestActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="146" column="35" lean-forward="false" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
+            <state relative-caret-position="294">
+              <caret line="196" column="33" lean-forward="false" selection-start-line="196" selection-start-column="33" selection-end-line="196" selection-end-column="33" />
               <folding>
                 <element signature="e#5102#6200#0" expanded="true" />
                 <element signature="e#6199#6200#0" expanded="true" />
-                <marker date="1512550964495" expanded="false" signature="3473:3586" ph="(response) → {" />
-                <marker date="1512550964495" expanded="false" signature="6924:6947" ph="}" />
-                <marker date="1512550964495" expanded="false" signature="8300:8422" ph="(v) → {" />
-                <marker date="1512550964495" expanded="false" signature="8745:8775" ph="}" />
-                <marker date="1512550964495" expanded="false" signature="10458:10482" ph=" { " />
-                <marker date="1512550964495" expanded="false" signature="10509:10519" ph=" }" />
+                <marker date="1512551556561" expanded="false" signature="3473:3586" ph="(response) → {" />
+                <marker date="1512551556561" expanded="false" signature="6924:6947" ph="}" />
+                <marker date="1512551556561" expanded="false" signature="8300:8422" ph="(v) → {" />
+                <marker date="1512551556561" expanded="false" signature="8745:8775" ph="}" />
+                <marker date="1512551556561" expanded="false" signature="10458:10482" ph=" { " />
+                <marker date="1512551556561" expanded="false" signature="10509:10519" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -2305,7 +2293,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512551210953" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512551625797" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2353,7 +2341,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512551210953" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512551625797" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2515,7 +2503,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512551210955" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512551625798" />
       </method>
     </configuration>
     <list size="1">
@@ -2579,7 +2567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512479454485</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added Dialog on submit button">
+      <created>1512551273428</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1512551273428</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2679,8 +2674,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="1. Back button added on activity" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Back button added on activity" />
+    <MESSAGE value="added Dialog on submit button" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Dialog on submit button" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -3135,17 +3135,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/ydacademy/TestActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="146" column="35" lean-forward="false" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
+        <state relative-caret-position="294">
+          <caret line="196" column="33" lean-forward="false" selection-start-line="196" selection-start-column="33" selection-end-line="196" selection-end-column="33" />
           <folding>
             <element signature="e#5102#6200#0" expanded="true" />
             <element signature="e#6199#6200#0" expanded="true" />
-            <marker date="1512550964495" expanded="false" signature="3473:3586" ph="(response) → {" />
-            <marker date="1512550964495" expanded="false" signature="6924:6947" ph="}" />
-            <marker date="1512550964495" expanded="false" signature="8300:8422" ph="(v) → {" />
-            <marker date="1512550964495" expanded="false" signature="8745:8775" ph="}" />
-            <marker date="1512550964495" expanded="false" signature="10458:10482" ph=" { " />
-            <marker date="1512550964495" expanded="false" signature="10509:10519" ph=" }" />
+            <marker date="1512551556561" expanded="false" signature="3473:3586" ph="(response) → {" />
+            <marker date="1512551556561" expanded="false" signature="6924:6947" ph="}" />
+            <marker date="1512551556561" expanded="false" signature="8300:8422" ph="(v) → {" />
+            <marker date="1512551556561" expanded="false" signature="8745:8775" ph="}" />
+            <marker date="1512551556561" expanded="false" signature="10458:10482" ph=" { " />
+            <marker date="1512551556561" expanded="false" signature="10509:10519" ph=" }" />
           </folding>
         </state>
       </provider>
