@@ -2,6 +2,7 @@ package com.example.user.ydacademy;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -9,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.RequiresApi;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -113,24 +115,47 @@ public class TestActivity extends AppCompatActivity {
                                     answerKey += "0";
 
                                 }
-
                                 data = userans + " " + answerKey;
-                                Intent intent = new Intent(TestActivity.this, ResultActivity.class);
-                                intent.putExtra("data", data);
-                                intent.putExtra("Class", class1);
-                                intent.putExtra("Subject", subject);
-                                intent.putExtra("Exam", exam);
-                                intent.putExtra("ES", es);
-                                intent.putExtra("Chapter", chapter);
-                                TestActivity.this.finish();
-                                startActivity(intent);
+                                AlertDialog.Builder alertDialog = new AlertDialog.Builder(TestActivity.this);
+
+                                alertDialog.setMessage("Do you really want to submit test.. ");
+
+                                alertDialog.setPositiveButton(
+                                        "Yes",
+                                        new DialogInterface.OnClickListener() {
+                                            public void onClick(DialogInterface dialog, int id) {
+                                                Intent intent = new Intent(TestActivity.this, ResultActivity.class);
+                                                intent.putExtra("data", data);
+                                                intent.putExtra("Class", class1);
+                                                intent.putExtra("Subject", subject);
+                                                intent.putExtra("Exam", exam);
+                                                intent.putExtra("ES", es);
+                                                intent.putExtra("Chapter", chapter);
+                                                TestActivity.this.finish();
+                                                startActivity(intent);
+                                                finish();
+                                                dialog.cancel();
+
+                                            }
+                                        });
+
+                                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                                    }
+                                });
+
+                                alertDialog.show();
+
+
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
 
                             }
                         } else {
-                            Toast.makeText(TestActivity.this, "insert answer entry in DB", Toast.LENGTH_LONG).show();
+                            //Toast.makeText(TestActivity.this, "insert answer entry in DB", Toast.LENGTH_LONG).show();
                         }
 
 
@@ -157,7 +182,7 @@ public class TestActivity extends AppCompatActivity {
     public void load_image()
     {
 
-        Glide.with(getApplicationContext()).load("http://192.168.0.22:8002/routes/" + class1 + "/" + es + chapter + "/q" + (count + 1) + ".PNG").asBitmap().override(600, 600)
+        Glide.with(getApplicationContext()).load("http://yashodeepacademy.co.in/" + class1 + "/" + es + chapter + "/q" + (count + 1) + ".PNG").asBitmap().override(600, 600)
                    .placeholder(null).listener(new RequestListener<String, Bitmap>() {
                @Override
                public boolean onException(Exception e, String model, Target<Bitmap> target, boolean isFirstResource) {
