@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.ydacademy.TabActivity">
+    tools:context="com.ydacademy.dell.Yashodeep2.TabActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,21 +19,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DashBoard"
+                android:layout_gravity="center"
                 android:gravity="center_horizontal"
+                android:text="Yashodeep Academy"
+                android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/colorWhite"
-                android:layout_gravity="center"/>
+                android:textStyle="bold" />
 
 
         </android.support.v7.widget.Toolbar>
     </RelativeLayout>
     <android.support.design.widget.AppBarLayout
         android:id="@+id/tabs1"
-        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.ydacademy.CareerGuidance">
+    tools:context="com.ydacademy.dell.Yashodeep2.CareerGuidance">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar1"
         android:layout_width="fill_parent"
@@ -12,26 +12,30 @@
         android:minHeight="?attr/actionBarSize"
         android:titleTextColor="#ffff">
 
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="onClick"
+            android:src="@drawable/leftarrow" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Carrier Guidence"
-            android:gravity="center_horizontal"
-            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Career Guidence"
             android:textColor="@color/colorWhite"
-            android:textStyle="bold"
-            android:layout_gravity="center"/>
+            android:textSize="15dp" />
 
     </android.support.v7.widget.Toolbar>
 
-
     <fragment
         android:id="@+id/frag1"
-        android:layout_marginTop="60dp"
-        android:name="com.example.user.ydacademy.CareerGuidenceFragment"
+        android:name="com.ydacademy.dell.Yashodeep2.CareerGuidenceFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
 
     </fragment>
 

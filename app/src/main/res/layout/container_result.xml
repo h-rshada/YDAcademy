@@ -138,7 +138,6 @@
 
 
             <com.phelat.fun.Layouts.Funny xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/mFunny"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -146,7 +145,7 @@
                 android:layout_below="@+id/radioGroup"
                 android:layout_centerHorizontal="true">
 
-                <com.phelat.fun.Widget.FunnyButton
+                <!--<com.phelat.fun.Widget.FunnyButton
                     android:id="@+id/mFunnyButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -178,7 +177,7 @@
 
                     </LinearLayout>
 
-                </com.phelat.fun.Widget.FunnyButton>
+                </com.phelat.fun.Widget.FunnyButton>-->
 
             </com.phelat.fun.Layouts.Funny>
 

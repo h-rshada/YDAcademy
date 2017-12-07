@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.user.ydacademy">
+    package="com.ydacademy.dell.Yashodeep2">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,50 +15,63 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TabActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.TabActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".CareerDetailsActivity" />
-        <activity android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.CareerDetailsActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".SyllabusActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.LoginActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ChapterActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.SyllabusActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.ChapterActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
         <activity
-            android:name=".TestActivity"
+            android:name="com.ydacademy.dell.Yashodeep2.TestActivity"
             android:launchMode="singleInstance" />
 
         <activity
-            android:name=".ResultActivity"
+            android:name="com.ydacademy.dell.Yashodeep2.ResultActivity"
             android:launchMode="singleInstance" />
-        <activity android:name=".DescriptionActivity" />
+        <activity android:name="com.ydacademy.dell.Yashodeep2.DescriptionActivity" />
 
-        <activity android:name=".StartTest"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.StartTest"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
-        <activity android:name=".SuccessStories"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.SuccessStories"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
-        <activity android:name=".DirectorInfo" />
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.DirectorInfo"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
 
-            android:name=".MainActivity"
+            android:name="com.ydacademy.dell.Yashodeep2.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -66,44 +79,51 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".TenthActivity" />
+        <activity android:name="com.ydacademy.dell.Yashodeep2.TenthActivity" />
 
-        <activity android:name=".AboutUs"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.AboutUs"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ContactUs"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.ContactUs"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".OurAchievers"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.OurAchievers"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ImpQuestions"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.ImpQuestions"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
 
-        <activity android:name=".ListQuestions" />
-        <activity android:name=".StaffActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity android:name="com.ydacademy.dell.Yashodeep2.ListQuestions" />
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.StaffActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".CareerGuidance"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.CareerGuidance"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".Performance"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.Performance"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".Splash"
+            android:name="com.ydacademy.dell.Yashodeep2.Splash"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -115,14 +135,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StudentStatforAdmin"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+        <activity
+            android:name="com.ydacademy.dell.Yashodeep2.StudentStatforAdmin"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".AchieversDescription"></activity>
+        <activity android:name="com.ydacademy.dell.Yashodeep2.AchieversDescription"></activity>
     </application>
 
 </manifest>
