@@ -13,7 +13,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -83,12 +82,13 @@ public class ChapterActivity extends AppCompatActivity {
 
                                        Log.d("Response", response);
                                        try {
-                                           JSONArray jsonArray = new JSONArray(response);
-                                           for (int i = 0; i < jsonArray.length(); i++) {
-                                               JSONObject jsonObject = jsonArray.getJSONObject(i);
-                                               chapter = jsonObject.getString("name");
-                                               chaptercode = jsonObject.getString("chaptercode");
-                                               chapters.add("" + chaptercode.substring(2) + ". " + chapter);
+                                           JSONObject jsonObject = new JSONObject(response);
+                                           for (int i = 1; i <= jsonObject.length(); i++) {
+                                               // JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                               Log.d("json", jsonObject.get(i + "") + "");
+                                               //chapter = jsonObject.getString("name");
+                                               // chaptercode = jsonObject.getString("chaptercode");
+                                               chapters.add("" + i + ". " + jsonObject.get(i + "") + "");
                                            }
 
                                        } catch (JSONException e1) {
