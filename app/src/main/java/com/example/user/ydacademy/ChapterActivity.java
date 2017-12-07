@@ -2,12 +2,14 @@ package com.example.user.ydacademy;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -72,7 +74,19 @@ public class ChapterActivity extends AppCompatActivity {
     }
 
     public void getData() {
-        loading = ProgressDialog.show(ChapterActivity.this, "Loading", "Please wait.....", false, false);
+        loading = ProgressDialog.show(ChapterActivity.this, "Loading", "Please wait.....", false, true);
+        loading.setOnKeyListener(new ProgressDialog.OnKeyListener() {
+            @Override
+            public boolean onKey(DialogInterface arg0, int keyCode,
+                                 KeyEvent event) {
+                // TODO Auto-generated method stub
+                if (keyCode == KeyEvent.KEYCODE_BACK) {
+                    finish();
+                    loading.dismiss();
+                }
+                return true;
+            }
+        });
         urlRequest = UrlRequest.getObject();
         urlRequest.setContext(ChapterActivity.this);
         urlRequest.setUrl("http://192.168.0.22:8003/fetchchaptername.php?subjectcode=" + es + "&class=" + class1);
@@ -133,9 +147,4 @@ public class ChapterActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onBackPressed() {
-        //super.onBackPressed();
-        loading.dismiss();
-    }
 }
