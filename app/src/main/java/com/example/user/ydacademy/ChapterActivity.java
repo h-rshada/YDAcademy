@@ -1,11 +1,9 @@
 package com.example.user.ydacademy;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -78,7 +76,7 @@ public class ChapterActivity extends AppCompatActivity {
         loading = ProgressDialog.show(ChapterActivity.this, "Loading", "Please wait.....", false, false);
         urlRequest = UrlRequest.getObject();
         urlRequest.setContext(ChapterActivity.this);
-        urlRequest.setUrl("http://yashodeepacademy.co.in/fetchchaptername.php?subjectcode=" + es + "&class=" + class1);
+        urlRequest.setUrl("http://192.168.0.22:8003/fetchchaptername.php?subjectcode=" + es + "&class=" + class1);
         urlRequest.getResponse(new ServerCallback() {
                                    @Override
                                    public void onSuccess(String response) {
@@ -133,5 +131,11 @@ public class ChapterActivity extends AppCompatActivity {
                 break;
         }
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        loading.dismiss();
     }
 }
