@@ -114,8 +114,8 @@ public class ResultActivity extends AppCompatActivity {
         String arr1[] = DateFormat.format("yyyy-MM-dd hh:mm:ss", d.getTime()).toString().split(" ");
         urlRequest = UrlRequest.getObject();
         urlRequest.setContext(ResultActivity.this);
-        Log.d("URL", "http://yashodeepacademy.co.in/updatestudentresult.php?student_id=" + id + "&examcode=" + es + chapter + "&score=" + marks + "-50" + "&date=" + arr1[0] + "&time=" + arr1[1]);
-        urlRequest.setUrl("http://yashodeepacademy.co.in/updatestudentresult.php?student_id=" + id + "&examcode=" + es + chapter + "&score=" + marks + "-50" + "&date=" + arr1[0] + "&time=" + arr1[1]);
+        Log.d("URL", "http://yashodeepacademy.co.in/admin/routes/updatestudentresult.php?student_id=" + id + "&examcode=" + es + chapter + "&score=" + marks + "-50" + "&date=" + arr1[0] + "&time=" + arr1[1]);
+        urlRequest.setUrl("http://yashodeepacademy.co.in/admin/routes/updatestudentresult.php?student_id=" + id + "&examcode=" + es + chapter + "&score=" + marks + "-50" + "&date=" + arr1[0] + "&time=" + arr1[1]);
         urlRequest.getResponse(new ServerCallback() {
             @Override
             public void onSuccess(String response) {

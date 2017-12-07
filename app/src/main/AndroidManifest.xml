@@ -16,24 +16,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".TabActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity android:name=".CareerDetailsActivity" />
         <activity android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".SyllabusActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".ChapterActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+            </intent-filter>
+
         </activity>
 
         <activity
@@ -46,13 +50,13 @@
         <activity android:name=".DescriptionActivity" />
 
         <activity android:name=".StartTest"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
         <activity android:name=".SuccessStories"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
         <activity android:name=".DirectorInfo" />
@@ -69,35 +73,35 @@
         <activity android:name=".TenthActivity" />
 
         <activity android:name=".AboutUs"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".ContactUs"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".OurAchievers"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".ImpQuestions"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
 
         <activity android:name=".ListQuestions" />
         <activity android:name=".StaffActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".CareerGuidance"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".Performance"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -116,8 +120,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".StudentStatforAdmin"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="">
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>

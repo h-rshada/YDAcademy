@@ -1,12 +1,10 @@
 package com.example.user.ydacademy;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -82,9 +80,9 @@ public class SyllabusActivity extends AppCompatActivity {
         Log.d("subject", subject);
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         String class1 = sp.getString("CLASS", null);
-        webView1.loadUrl("https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/syllabus/" + class1 + exam + subject + ".pdf");
+        webView1.loadUrl("https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/admin/routes/syllabus/" + class1 + exam + subject + ".pdf");
         loading.dismiss();
-        Log.d("PDF", "https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/syllabus/" + class1 + exam + subject + ".pdf");
+        Log.d("PDF", "https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/admin/routes/syllabus/" + class1 + exam + subject + ".pdf");
     }
 
     @OnClick({R.id.img_back}) /* , R.id.fab*/
