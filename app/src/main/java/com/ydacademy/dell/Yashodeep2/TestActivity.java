@@ -25,7 +25,6 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
-import com.example.user.ydacademy.R;
 import com.jetradar.desertplaceholder.DesertPlaceholder;
 
 import org.json.JSONArray;

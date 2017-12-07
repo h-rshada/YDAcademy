@@ -14,48 +14,45 @@
     <list default="true" id="daea1603-2c64-4c45-a6f5-72fa097dc047" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_animated_vector_drawable_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_animated_vector_drawable_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_appcompat_v7_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_appcompat_v7_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_cardview_v7_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_cardview_v7_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_constraint_constraint_layout_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_constraint_constraint_layout_1_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_design_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_design_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_recyclerview_v7_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_recyclerview_v7_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_compat_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_compat_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_ui_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_ui_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_utils_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_core_utils_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_fragment_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_fragment_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_media_compat_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_media_compat_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_v4_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_v4_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_vector_drawable_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_support_vector_drawable_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_espresso_espresso_core_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_espresso_espresso_core_2_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_espresso_espresso_idling_resource_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_espresso_espresso_idling_resource_2_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_exposed_instrumentation_api_publish_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_exposed_instrumentation_api_publish_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_rules_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_rules_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_runner_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_test_runner_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_android_support_transition_26_0_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_android_support_transition_26_0_0_alpha1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_daimajia_slider_library_1_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_daimajia_slider_library_1_1_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_barteksc_android_pdf_viewer_2_7_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_barteksc_android_pdf_viewer_2_7_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_barteksc_pdfium_android_1_7_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_barteksc_pdfium_android_1_7_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_coyarzun89_fabtransitionactivity_0_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_coyarzun89_fabtransitionactivity_0_2_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_jetradarmobile_desertplaceholder_desertplaceholder_1_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_jetradarmobile_desertplaceholder_desertplaceholder_1_2_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_ozodrukh_CircularReveal_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_ozodrukh_CircularReveal_1_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_traex_rippleeffect_library_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_traex_rippleeffect_library_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_mcxiaoke_volley_library_aar_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_mcxiaoke_volley_library_aar_1_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_oguzdev_CircularFloatingActionMenu_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_oguzdev_CircularFloatingActionMenu_1_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_phelat_fun_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_phelat_fun_1_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/de_hdodenhof_circleimageview_1_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/de_hdodenhof_circleimageview_1_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/me_biubiubiu_justifytext_library_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/me_biubiubiu_justifytext_library_1_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YDAcademy.iml" afterPath="$PROJECT_DIR$/YDAcademy.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AboutUs.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AboutUs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AchieversDescription.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AchieversDescription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AdapterPerformance.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AdapterPerformance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AdapterResult.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AdapterResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AdapterStaff.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AdapterStaff.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AdapterStudent.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AdapterStudent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/Admin.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/Admin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CareerDetailsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CareerDetailsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CareerGuidance.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CareerGuidance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CareerGuidenceFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CareerGuidenceFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ChapterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ChapterActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ContactUs.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ContactUs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/DescriptionActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/DescriptionActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/DirectorInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/DirectorInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ImpQuestions.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ImpQuestions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ListQuestions.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ListQuestions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/OurAchievers.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/OurAchievers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ResultActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ResultActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/Splash.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/Splash.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/StaffActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/StaffActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/StartTest.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/StartTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/StudentStatforAdmin.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/StudentStatforAdmin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/SuccessStories.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/SuccessStories.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/SyllabusActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/SyllabusActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/SyllabusFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/SyllabusFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TabActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TabActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TenthActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TenthActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,36 +90,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CareerGuidenceFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CareerGuidenceFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChapterActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChapterActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ChapterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1886">
+              <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,14 +140,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3309">
-              <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="189">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <marker date="1512648963683" expanded="false" signature="3476:3589" ph="(response) → {" />
+                <marker date="1512648963683" expanded="false" signature="5109:5250" ph="(dialog, id) → {" />
+                <marker date="1512648963683" expanded="false" signature="5686:5737" ph="}" />
+                <marker date="1512648963683" expanded="false" signature="6894:6917" ph="}" />
+                <marker date="1512648963683" expanded="false" signature="8270:8392" ph="(v) → {" />
+                <marker date="1512648963683" expanded="false" signature="8715:8745" ph="}" />
+                <marker date="1512648963683" expanded="false" signature="10873:10897" ph=" { " />
+                <marker date="1512648963683" expanded="false" signature="10924:10934" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactUs.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ContactUs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckInternet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CheckInternet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,7 +186,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1512648828981" expanded="true" signature="482:528" ph="/**...*/" />
+                <marker date="1512648828981" expanded="true" signature="2028:2297" ph="{...}" />
+                <marker date="1512648828981" expanded="true" signature="2656:9100" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1977,14 +1983,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/AboutUs.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CareerGuidenceFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ChapterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ResultActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ListQuestions.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/SyllabusFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TabActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CareerDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ChapterActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestActivity.java" />
       </list>
     </option>
   </component>
@@ -3537,7 +3543,7 @@
       <option name="ACTIVITY_CLASS" value="com.example.user.ydacademy.TabActivity" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512648778190" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512648963819" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -3610,7 +3616,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512648778190" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512648963820" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3658,7 +3664,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512648778190" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512648963820" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3820,7 +3826,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512648778191" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512648963821" />
       </method>
     </configuration>
     <list size="2">
@@ -3932,7 +3938,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512646705533</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="changed package">
+      <created>1512648816862</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1512648816862</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3941,7 +3954,7 @@
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -4039,7 +4052,8 @@
     <MESSAGE value="updated count for question set isn't available" />
     <MESSAGE value="added pop-up on submit buttton" />
     <MESSAGE value="added code to cancel progress Dialog on backpressed" />
-    <option name="LAST_COMMIT_MESSAGE" value="added code to cancel progress Dialog on backpressed" />
+    <MESSAGE value="changed package" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed package" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -4075,14 +4089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
           <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CheckInternet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -4302,14 +4308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ContactUs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/StaffActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -4454,7 +4452,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1512648828981" expanded="true" signature="482:528" ph="/**...*/" />
+            <marker date="1512648828981" expanded="true" signature="2028:2297" ph="{...}" />
+            <marker date="1512648828981" expanded="true" signature="2656:9100" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4474,22 +4476,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ChapterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3309">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state relative-caret-position="-1886">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ContactUs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ChapterActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/CheckInternet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="160">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1512648963683" expanded="false" signature="3476:3589" ph="(response) → {" />
+            <marker date="1512648963683" expanded="false" signature="5109:5250" ph="(dialog, id) → {" />
+            <marker date="1512648963683" expanded="false" signature="5686:5737" ph="}" />
+            <marker date="1512648963683" expanded="false" signature="6894:6917" ph="}" />
+            <marker date="1512648963683" expanded="false" signature="8270:8392" ph="(v) → {" />
+            <marker date="1512648963683" expanded="false" signature="8715:8745" ph="}" />
+            <marker date="1512648963683" expanded="false" signature="10873:10897" ph=" { " />
+            <marker date="1512648963683" expanded="false" signature="10924:10934" ph=" }" />
           </folding>
         </state>
       </provider>
