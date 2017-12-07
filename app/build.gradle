@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion '26.0.2'
     defaultConfig {
-        applicationId "com.example.user.ydacademy"
+        applicationId "com.ydacademy.dell.Yashodeep2"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
@@ -19,6 +19,7 @@ android {
     }
 }
 
+
 repositories {
     mavenCentral()
 
@@ -26,6 +27,7 @@ repositories {
         url "https://jitpack.io"
     }
 }
+
 
 android {
 

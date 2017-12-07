@@ -8,6 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+
 public class Splash extends AppCompatActivity {
 
     private static int SPLASH_TIME_OUT = 3000;
