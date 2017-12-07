@@ -1,6 +1,4 @@
-package
-
-        com.ydacademy.dell.Yashodeep2;
+package com.example.user.ydacademy;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
@@ -12,6 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
+import com.example.user.ydacademy.R;
 
 public class Admin extends AppCompatActivity {
 

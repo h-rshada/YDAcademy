@@ -1,4 +1,4 @@
-package com.ydacademy.dell.Yashodeep2;
+package com.example.user.ydacademy;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+
+import com.example.user.ydacademy.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

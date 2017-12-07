@@ -1,4 +1,4 @@
-package com.ydacademy.dell.Yashodeep2;
+package com.example.user.ydacademy;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.example.user.ydacademy.R;
 
 import java.util.Collections;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.ydacademy.dell.Yashodeep2;
+package com.example.user.ydacademy;
 
 import android.content.Intent;
 import android.os.Build;
@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.user.ydacademy.R;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
