@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -67,6 +68,7 @@ public class ChapterActivity extends AppCompatActivity {
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         class1 = sp.getString("CLASS", null);
         Log.d("Class***", class1);
+
         getData();
     }
 
@@ -74,29 +76,33 @@ public class ChapterActivity extends AppCompatActivity {
         loading = ProgressDialog.show(ChapterActivity.this, "Loading", "Please wait.....", false, false);
         urlRequest = UrlRequest.getObject();
         urlRequest.setContext(ChapterActivity.this);
-        Log.d("Url", "http://yashodeepacademy.co.in/fetchchaptername.php?subjectcode=" + es + "&class=" + class1);
-        urlRequest.setUrl("http://yashodeepacademy.co.in/fetchchaptername.php?subjectcode=" + es + "&class=" + class1);
+        urlRequest.setUrl("http://192.168.0.22:8003/fetchchaptername.php?subjectcode=" + es + "&class=" + class1);
         urlRequest.getResponse(new ServerCallback() {
                                    @Override
                                    public void onSuccess(String response) {
+
                                        Log.d("Response", response);
                                        try {
-
-                                           JSONObject jsonObject = new JSONObject(response);
-                                           for (int i = 1; i <= jsonObject.length(); i++) {
-//
-                                               Log.d("Json", jsonObject.get(i + "") + "");
-                                               chapters.add(i + "." + jsonObject.get(i + "") + "");
+                                           JSONArray jsonArray = new JSONArray(response);
+                                           for (int i = 0; i < jsonArray.length(); i++) {
+                                               JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                               chapter = jsonObject.getString("name");
+                                               chaptercode = jsonObject.getString("chaptercode");
+                                               chapters.add("" + chaptercode.substring(2) + ". " + chapter);
                                            }
+
                                        } catch (JSONException e1) {
                                            e1.printStackTrace();
                                        }
                                        loading.dismiss();
+
                                        Log.d("Chapters", chapters.toString() + "");
                                        adapter = new ArrayAdapter(ChapterActivity.this, android.R.layout.simple_list_item_1, chapters);
                                        listChapters.setAdapter(adapter);
                                        adapter.notifyDataSetChanged();
+
                                    }
+
                                }
         );
     }
@@ -117,7 +123,8 @@ public class ChapterActivity extends AppCompatActivity {
 
     @OnClick({R.id.img_back}) /* , R.id.fab*/
     public void onClick(View view) {
-        switch (view.getId()) {
+        switch (view.getId())
+        {
             case R.id.img_back:
                 Intent intent=new Intent(ChapterActivity.this,TabActivity.class);
                 startActivity(intent);
@@ -128,7 +135,7 @@ public class ChapterActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        //super.onBackPressed();
         loading.dismiss();
     }
 }
