@@ -24,8 +24,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.user.ydacademy.R;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -55,7 +53,6 @@ public class LoginActivity extends AppCompatActivity {
     Toolbar toolbar ;
     UrlRequest urlRequest;
     String username, password, name, id, class1;
-
     SharedPreferences sp;
     Intent intent;
     @Override
@@ -71,7 +68,6 @@ public class LoginActivity extends AppCompatActivity {
                 SharedPreferences sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
                 String username = sp.getString("USERNAME", null);
                 if (username != null) {
-
                 }
             } else
                 Log.d("TAG", "Setup default preferences");
@@ -101,7 +97,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 urlRequest = UrlRequest.getObject();
                 urlRequest.setContext(LoginActivity.this);
-                Log.d("Url","http://yashodeepacademy.co.in/login_verification.php?username=" + username + "&password=" + password);
+                Log.d("Url", "http://yashodeepacademy.co.in/admin/routes/login_verification.php?username=" + username + "&password=" + password);
                 urlRequest.setUrl("http://yashodeepacademy.co.in/login_verification.php?username=" + username + "&password=" + password);
                 urlRequest.getResponse(new ServerCallback() {
                                            @Override
@@ -111,7 +107,7 @@ public class LoginActivity extends AppCompatActivity {
                                                    Log.d("Response", response);
                                                    if (!response.contains("Invalid Username or password")) {
                                                        JSONArray jsonArray = new JSONArray(response);
-                                                       for (int i = 0; i <= jsonArray.length(); i++) {
+                                                       for (int i = 0; i < jsonArray.length(); i++) {
                                                            JSONObject jsonObject = jsonArray.getJSONObject(i);
                                                            id = jsonObject.getString("id");
                                                            class1 = jsonObject.getString("class");

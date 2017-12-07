@@ -88,7 +88,6 @@
                         android:id="@+id/et_username"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
                         android:background="@drawable/selector_bg_edit"
                         android:hint="@string/Username"
                         android:inputType="textPersonName"

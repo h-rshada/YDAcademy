@@ -1,4 +1,4 @@
-package com.example.user.ydacademy;
+package com.ydacademy.dell.Yashodeep2;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -18,7 +18,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
-import com.example.user.ydacademy.R;
 import com.phelat.fun.Control.FunControl;
 import com.phelat.fun.Layouts.Funny;
 import com.phelat.fun.Widget.FunnyButton;
@@ -226,7 +225,7 @@ public class AdapterResult extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         public MyHolder(View itemView) {
             super(itemView);
             ivresult = itemView.findViewById(R.id.ivresult);
-            /*ivdescription = itemView.findViewById(R.id.imageview_description);*/
+            ivdescription = itemView.findViewById(R.id.imageview_description);
             queNUmber = itemView.findViewById(R.id.txt_queNumber);
             progressBar=itemView.findViewById(R.id.progress);
 
@@ -247,8 +246,8 @@ public class AdapterResult extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             optionD.setEnabled(false);
 
             funny = itemView.findViewById(R.id.mFunny);
-           /* funnyButton = itemView.findViewById(R.id.mFunnyButton);*/
-           /* funnyContainer = itemView.findViewById(R.id.mFunContainer);*/
+            funnyButton = itemView.findViewById(R.id.mFunnyButton);
+            funnyContainer = itemView.findViewById(R.id.mFunContainer);
             funControl = new FunControl.Builder()
                     .setFunnyLayout(funny)
                     .setFunnyButton(funnyButton)

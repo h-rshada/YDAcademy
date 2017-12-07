@@ -1,4 +1,4 @@
-package com.example.user.ydacademy;
+package com.ydacademy.dell.Yashodeep2;
 
 
 import android.content.Intent;
@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 
-import com.example.user.ydacademy.R;
 
 
 /**

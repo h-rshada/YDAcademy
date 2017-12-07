@@ -22,7 +22,10 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".CareerDetailsActivity" />
+        <activity
+            android:name=".CareerDetailsActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".LoginActivity"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar">
@@ -59,7 +62,10 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
-        <activity android:name=".DirectorInfo" />
+        <activity
+            android:name=".DirectorInfo"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
 
             android:name=".MainActivity"

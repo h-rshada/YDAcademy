@@ -1,4 +1,4 @@
-package com.example.user.ydacademy;
+package com.ydacademy.dell.Yashodeep2;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -11,7 +11,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
-import com.example.user.ydacademy.R;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;

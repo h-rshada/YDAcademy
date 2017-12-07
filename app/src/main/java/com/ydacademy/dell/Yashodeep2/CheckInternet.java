@@ -1,4 +1,4 @@
-package com.example.user.ydacademy;
+package com.ydacademy.dell.Yashodeep2;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

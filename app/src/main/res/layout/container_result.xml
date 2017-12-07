@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white">
@@ -145,7 +146,7 @@
                 android:layout_below="@+id/radioGroup"
                 android:layout_centerHorizontal="true">
 
-                <!--<com.phelat.fun.Widget.FunnyButton
+                <com.phelat.fun.Widget.FunnyButton
                     android:id="@+id/mFunnyButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -177,7 +178,7 @@
 
                     </LinearLayout>
 
-                </com.phelat.fun.Widget.FunnyButton>-->
+                </com.phelat.fun.Widget.FunnyButton>
 
             </com.phelat.fun.Layouts.Funny>
 

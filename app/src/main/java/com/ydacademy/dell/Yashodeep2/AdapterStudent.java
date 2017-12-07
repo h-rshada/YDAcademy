@@ -1,4 +1,4 @@
-package com.example.user.ydacademy;
+package com.ydacademy.dell.Yashodeep2;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -13,7 +13,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.user.ydacademy.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.Collections;
