@@ -1,6 +1,7 @@
 package com.ydacademy.dell.Yashodeep2;
 
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -41,8 +43,19 @@ public class StaffActivity extends AppCompatActivity {
         setContentView(R.layout.activity_staff);
         ButterKnife.inject(this);
 
-        loading = ProgressDialog.show(StaffActivity.this, "Loading", "Please wait.....", false, false);
-
+        loading = ProgressDialog.show(StaffActivity.this, "Loading", "Please wait.....", false, true);
+        loading.setOnKeyListener(new ProgressDialog.OnKeyListener() {
+            @Override
+            public boolean onKey(DialogInterface arg0, int keyCode,
+                                 KeyEvent event) {
+                // TODO Auto-generated method stub
+                if (keyCode == KeyEvent.KEYCODE_BACK) {
+                    finish();
+                    loading.dismiss();
+                }
+                return true;
+            }
+        });
         final List<DataStaff> data = new ArrayList<>();
         urlRequest = UrlRequest.getObject();
         urlRequest.setContext(StaffActivity.this);

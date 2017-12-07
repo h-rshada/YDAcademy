@@ -176,7 +176,7 @@ public class AdapterResult extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 return false;
             }
         })
-                .error(null)
+                .error(R.drawable.sorryimagenotavailable)
                 .into(myHolder.ivdescription);
         myHolder.funnyButton.setOnClickListener(new View.OnClickListener() {
             @Override

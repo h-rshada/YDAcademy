@@ -18,7 +18,7 @@ public class ListQuestions extends AppCompatActivity {
     WebView webView1;
     UrlRequest urlRequest;
     SharedPreferences sp;
-    String urlPDF = "https://docs.google.com/gview?embedded=true&url=http://www.stafforini.com/txt/Covey%20-%20The%207%20habits%20of%20highly%20effective%20people.pdf";
+    //String urlPDF = "https://docs.google.com/gview?embedded=true&url=http://www.stafforini.com/txt/Covey%20-%20The%207%20habits%20of%20highly%20effective%20people.pdf";
     String class1, subject, pdfname;
     private ProgressDialog loading;
 
@@ -54,7 +54,7 @@ public class ListQuestions extends AppCompatActivity {
 
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         String class1 = sp.getString("CLASS", null);
-        webView1.loadUrl("https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/imp/" + class1 + "/" + subject + "/" + pdfname);
-        Log.d("PDF", "https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/imp/" + class1 + "/" + subject + "/" + pdfname);
+        webView1.loadUrl("https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/admin/routes/imp/" + class1 + "/" + subject + "/" + pdfname);
+        Log.d("PDF", "https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/admin/routes/imp/" + class1 + "/" + subject + "/" + pdfname);
     }
 }

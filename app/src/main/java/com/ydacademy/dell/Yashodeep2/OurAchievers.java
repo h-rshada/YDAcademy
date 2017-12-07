@@ -1,6 +1,7 @@
 package com.ydacademy.dell.Yashodeep2;
 
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -44,8 +46,19 @@ public class OurAchievers extends AppCompatActivity {
         urlRequest = UrlRequest.getObject();
         urlRequest.setContext(OurAchievers.this);
         urlRequest.setUrl("http://yashodeepacademy.co.in/fetchstudentacheivers.php");
-        loading = ProgressDialog.show(OurAchievers.this, "Loading", "Please wait.....", false, false);
-
+        loading = ProgressDialog.show(OurAchievers.this, "Loading", "Please wait.....", false, true);
+        loading.setOnKeyListener(new ProgressDialog.OnKeyListener() {
+            @Override
+            public boolean onKey(DialogInterface arg0, int keyCode,
+                                 KeyEvent event) {
+                // TODO Auto-generated method stub
+                if (keyCode == KeyEvent.KEYCODE_BACK) {
+                    finish();
+                    loading.dismiss();
+                }
+                return true;
+            }
+        });
         urlRequest.getResponse(new ServerCallback() {
                                    @Override
                                    public void onSuccess(String response) {

@@ -104,11 +104,11 @@ public class LoginActivity extends AppCompatActivity {
                                            @Override
                                            public void onSuccess(String response) {
                                                try {
-                                                   Log.d("Response", response);
 
+                                                   Log.d("Response", response);
                                                    if (!response.contains("Invalid Username or password")) {
                                                        JSONArray jsonArray = new JSONArray(response);
-                                                       for (int i = 0; i < jsonArray.length(); i++) {
+                                                       for (int i = 0; i <= jsonArray.length(); i++) {
                                                            JSONObject jsonObject = jsonArray.getJSONObject(i);
                                                            id = jsonObject.getString("id");
                                                            class1 = jsonObject.getString("class");
