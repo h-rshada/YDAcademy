@@ -83,20 +83,7 @@ public class AdapterStudent extends RecyclerView.Adapter<RecyclerView.ViewHolder
         }).error(null)
                 .into(myHolder.imageStudent);*/
 
-/*
-        myHolder.cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                myHolder.getItemId();
-                Log.d("Name", dataStudent.name);
-                Intent intent = new Intent(context, AchieversDescription.class);
-                intent.putExtra("Url", "http://yashodeepacademy.co.in/studentacheivers/" + dataStudent.id + ".jpg");
-                intent.putExtra("Name", dataStudent.name);
-                intent.putExtra("Id", dataStudent.id);
-                intent.putExtra("Description", dataStudent.description);
-                context.startActivity(intent);
-            }
-        });*/
+
     }
 
     @Override

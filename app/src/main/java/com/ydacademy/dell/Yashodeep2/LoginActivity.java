@@ -55,6 +55,7 @@ public class LoginActivity extends AppCompatActivity {
     String username, password, name, id, class1;
     SharedPreferences sp;
     Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,6 +69,7 @@ public class LoginActivity extends AppCompatActivity {
                 SharedPreferences sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
                 String username = sp.getString("USERNAME", null);
                 if (username != null) {
+
                 }
             } else
                 Log.d("TAG", "Setup default preferences");
@@ -80,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    @OnClick({R.id.btnLogin, R.id.txtForgotPassword,R.id.img_back}) /* , R.id.fab*/
+    @OnClick({R.id.btnLogin, R.id.txtForgotPassword, R.id.img_back})
     public void onClick(View view) {
         switch (view.getId()) {
 
@@ -131,6 +133,7 @@ public class LoginActivity extends AppCompatActivity {
                                                        explode.setDuration(500);
                                                        getWindow().setExitTransition(explode);
                                                        getWindow().setEnterTransition(explode);
+
                                                        if (name.equalsIgnoreCase("Admin")) {
                                                            intent = new Intent(LoginActivity.this, StudentStatforAdmin.class);
                                                            startActivity(intent);
@@ -139,12 +142,18 @@ public class LoginActivity extends AppCompatActivity {
                                                        }
                                                        // ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(LoginActivity.this);
                                                        else {
+
                                                            intent = new Intent();
                                                            intent.putExtra("data", true);
                                                            setResult(RESULT_OK, intent);
                                                            Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_LONG).show();
                                                            finish();
                                                        }
+                                                      /* }
+                                                       else
+                                                       {
+                                                           Toast.makeText(LoginActivity.this,"You have logged in on other device",Toast.LENGTH_SHORT).show();
+                                                       }*/
                                                        return;
                                                    } else {
                                                        Snackbar.make(relativeLayout, "Invalid Login", Snackbar.LENGTH_LONG).setAction("Action", null).show();

@@ -29,7 +29,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.daimajia.slider.library.SliderLayout;
@@ -217,14 +216,7 @@ public class MainActivity extends ActionBarActivity
 
             }
         });
-       /* rippleView1.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
-            @Override
-            public void onComplete(RippleView rippleView) {
-                rippleView1.setRippleDuration(80);
-                intent = new Intent(MainActivity.this, AboutUs.class);
-                startActivity(intent);
-            }
-        });*/
+
     }
 
     public void onBackPressed() {
@@ -404,9 +396,9 @@ public class MainActivity extends ActionBarActivity
             if (data.getBooleanExtra("data", false)) {
                 menuItem.setTitle("Logout");
                 NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-                SharedPreferences sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
+              /*  SharedPreferences sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
                 ((TextView) (navigationView.getHeaderView(0).findViewById(R.id.username))).setText(sp.getString("USERNAME", null));
-                ((TextView) (navigationView.getHeaderView(0).findViewById(R.id.standard))).setText(sp.getString("CLASS", null));
+                ((TextView) (navigationView.getHeaderView(0).findViewById(R.id.standard))).setText(sp.getString("CLASS", null));*/
                 Menu menu = navigationView.getMenu();
                 menu.getItem(0).setTitle("Logout");
                 Log.d("****", "Item**** ");

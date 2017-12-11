@@ -71,7 +71,7 @@ public class TabActivity extends AppCompatActivity {
         viewPager.setCurrentItem(0);
     }
 
-    @Override
+   /* @Override
     public void onBackPressed() {
         if (back_pressed + 2000 > System.currentTimeMillis()) {
             // need to cancel the toast here
@@ -85,7 +85,7 @@ public class TabActivity extends AppCompatActivity {
             toast.show();
         }
         back_pressed = System.currentTimeMillis();
-    }
+    }*/
 
     @OnClick({R.id.img_back}) /* , R.id.fab*/
     public void onClick(View view) {

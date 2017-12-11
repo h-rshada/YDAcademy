@@ -89,7 +89,7 @@ public class ChapterActivity extends AppCompatActivity {
         });
         urlRequest = UrlRequest.getObject();
         urlRequest.setContext(ChapterActivity.this);
-        urlRequest.setUrl("http://192.168.0.22:8003/fetchchaptername.php?subjectcode=" + es + "&class=" + class1);
+        urlRequest.setUrl("http://yashodeepacademy.co.in/fetchchaptername.php?subjectcode=" + es + "&class=" + class1);
         urlRequest.getResponse(new ServerCallback() {
                                    @Override
                                    public void onSuccess(String response) {

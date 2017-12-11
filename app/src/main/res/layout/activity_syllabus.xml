@@ -5,35 +5,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.ydacademy.dell.Yashodeep2.SyllabusActivity">
-    <!--  <ListView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:id="@+id/listChapters">
 
-      </ListView>-->
-    <!--  <com.github.barteksc.pdfviewer.PDFView
-          android:id="@+id/pdfView"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"/>-->
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar1"
         android:layout_width="fill_parent"
         android:layout_height="58dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
+
         android:titleTextColor="#ffff">
 
-        <ImageView
-            android:id="@+id/img_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:src="@drawable/leftarrow" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="60dp"
             android:text="Syllabus"
+
             android:textColor="@color/colorWhite"
             android:textSize="15dp"
 
