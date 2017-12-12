@@ -22,7 +22,8 @@ public class AboutUs extends AppCompatActivity {
     TextView textView;
     @InjectView(R.id.img_back)
     ImageView imageback;
-
+    /*@InjectView(R.id.btn_director)
+       AppCompatButton btn_director;*/
     Toolbar toolbar ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +41,15 @@ public class AboutUs extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.img_back}) /* , R.id.fab*/
+    @OnClick({R.id.img_back, R.id.btn_director}) /* , R.id.fab*/
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.img_back:
                 Intent intent = new Intent(AboutUs.this, MainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_director:
+                intent = new Intent(AboutUs.this, DirectorInfo.class);
                 startActivity(intent);
                 break;
         }

@@ -51,8 +51,8 @@ public class MainActivity extends ActionBarActivity
     SliderLayout sliderShow;
     @InjectView(R.id.btn_career)
     AppCompatButton btn_career;
-    @InjectView(R.id.btn_director)
-    AppCompatButton btn_director;
+    /*@InjectView(R.id.btn_director)
+    AppCompatButton btn_director;*/
     @InjectView(R.id.imageClassroom)
     ImageView imageClassroom;
     Menu menu1, navbar_menu;
@@ -245,7 +245,7 @@ public class MainActivity extends ActionBarActivity
     }
 
 
-    @OnClick({R.id.imageClassroom, R.id.btn_career, R.id.btn_Staff, R.id.btn_success, R.id.btn_contactus, R.id.btn_aboutus, R.id.btn_achiever, R.id.btn_director})
+    @OnClick({R.id.imageClassroom, R.id.btn_career, R.id.btn_Staff, R.id.btn_success, R.id.btn_contactus, R.id.btn_aboutus, R.id.btn_achiever})
 
     public void onClick(View view) {
 
@@ -297,10 +297,10 @@ public class MainActivity extends ActionBarActivity
                 intent = new Intent(MainActivity.this, OurAchievers.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_director:
+           /* case R.id.btn_director:
                 intent = new Intent(MainActivity.this, DirectorInfo.class);
                 startActivity(intent);
-                break;
+                break;*/
         }
     }
 

@@ -117,6 +117,7 @@ public class Performance extends AppCompatActivity {
 
                                                    data.add(dataPerformance);
                                                }
+
                                                Log.d("Size***", data.size() + "");
                                                recyclerView = (RecyclerView) findViewById(R.id.recyclePerformance);
                                                recyclerView.setVisibility(View.VISIBLE);

@@ -33,8 +33,8 @@ public class Admin extends AppCompatActivity {
     private void actionBarSetup() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             android.support.v7.app.ActionBar ab = getSupportActionBar();
-            ab.setTitle("Yashodeep Academy");
-            ab.setSubtitle("Home/Admin Panel");
+            ab.setTitle("Admin Panel");
+
         }
     }
 }

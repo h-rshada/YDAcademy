@@ -16,6 +16,14 @@
             android:minHeight="?attr/actionBarSize"
             android:titleTextColor="#ffff">
 
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="onClick"
+                android:src="@drawable/leftarrow" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

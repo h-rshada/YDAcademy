@@ -27,7 +27,9 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/careerafter10"
             android:gravity="center_vertical"
-            android:minHeight="?android:attr/listPreferredItemHeight" />
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:text="10"
+            android:textSize="1dp" />
 
         <LinearLayout
             android:id="@+id/section1"
@@ -41,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:dropDownHeight="100dp"
-                android:entries="@array/courses1"
+
                 android:visibility="gone" />
 
         </LinearLayout>
@@ -54,8 +56,9 @@
             android:background="@drawable/careerrafter12"
             android:gravity="center_vertical"
             android:minHeight="?android:attr/listPreferredItemHeight"
+            android:text="12"
             android:textColor="@android:color/white"
-            android:textSize="28sp" />
+            android:textSize="1dp" />
 
         <LinearLayout
             android:id="@+id/section2"
@@ -69,7 +72,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:dropDownHeight="100dp"
-                android:entries="@array/courses2"
                 android:spinnerMode="dropdown"
                 android:visibility="gone" />
         </LinearLayout>
