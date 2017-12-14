@@ -45,6 +45,9 @@ public class ImpQuestions extends AppCompatActivity {
         setSupportActionBar(toolbar);
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         class1 = sp.getString("CLASS", null);
+        if (class1.equals("guest")) {
+            class1 = "10";
+        }
         Log.d("Class***", class1);
         subject = getIntent().getStringExtra("Subject");
         Log.d("Subject***", subject);

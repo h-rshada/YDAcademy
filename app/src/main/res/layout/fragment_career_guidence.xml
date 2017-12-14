@@ -31,22 +31,20 @@
             android:text="10"
             android:textSize="1dp" />
 
-        <LinearLayout
-            android:id="@+id/section1"
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:orientation="vertical"
-            android:visibility="gone">
+        <!--  <LinearLayout
+              android:id="@+id/section1"
+              android:layout_width="match_parent"
+              android:layout_height="500dp"
+              android:orientation="vertical"
+              android:visibility="gone">-->
 
             <Spinner
                 android:id="@+id/spinner1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:dropDownHeight="100dp"
+                android:dropDownHeight="100dp" />
 
-                android:visibility="gone" />
-
-        </LinearLayout>
+        <!--</LinearLayout>-->
 
         <TextView
             android:id="@+id/header2"
@@ -60,20 +58,19 @@
             android:textColor="@android:color/white"
             android:textSize="1dp" />
 
-        <LinearLayout
-            android:id="@+id/section2"
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:orientation="vertical"
-            android:visibility="gone">
+        <!--   <LinearLayout
+               android:id="@+id/section2"
+               android:layout_width="match_parent"
+               android:layout_height="500dp"
+               android:orientation="vertical"
+               android:visibility="gone">-->
 
             <Spinner
                 android:id="@+id/spinner2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:dropDownHeight="100dp"
-                android:spinnerMode="dropdown"
-                android:visibility="gone" />
-        </LinearLayout>
+                android:spinnerMode="dropdown" />
+        <!--// </LinearLayout>-->
     </LinearLayout>
 </ScrollView>

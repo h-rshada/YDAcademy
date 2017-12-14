@@ -180,7 +180,7 @@ public class TestActivity extends AppCompatActivity {
 
     public void load_image()
     {
-
+        Log.d("Url", "http://yashodeepacademy.co.in/" + class1 + "/" + es + chapter + "/q" + (count + 1) + ".PNG");
         Glide.with(getApplicationContext()).load("http://yashodeepacademy.co.in/" + class1 + "/" + es + chapter + "/q" + (count + 1) + ".PNG").asBitmap().override(600, 600)
                    .placeholder(null).listener(new RequestListener<String, Bitmap>() {
                @Override

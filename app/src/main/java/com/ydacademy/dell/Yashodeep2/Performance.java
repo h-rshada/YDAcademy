@@ -117,7 +117,7 @@ public class Performance extends AppCompatActivity {
 
                                                    data.add(dataPerformance);
                                                }
-
+                                               Log.d("List***", data + "");
                                                Log.d("Size***", data.size() + "");
                                                recyclerView = (RecyclerView) findViewById(R.id.recyclePerformance);
                                                recyclerView.setVisibility(View.VISIBLE);
@@ -139,7 +139,7 @@ public class Performance extends AppCompatActivity {
         );
     }
 
-    @OnClick(R.id.img_back) /* , R.id.fab*/
+    @OnClick(R.id.img_back)
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.img_back:

@@ -2,6 +2,7 @@ package com.ydacademy.dell.Yashodeep2;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -19,6 +20,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,9 +28,11 @@ import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.daimajia.slider.library.SliderLayout;
@@ -67,11 +71,13 @@ public class MainActivity extends ActionBarActivity
     @InjectView(R.id.btn_achiever)
     AppCompatButton btnAchiever;
     SharedPreferences sp;
+    SharedPreferences.Editor editor;
     String username, id, class1;
     MenuItem menuItem;
     String itemname;
     Intent intent;
     Animation animation;
+    Button btnEleventh, btnTwelth, btnTenth;
     private Toast toast;
     private long back_pressed = 0;
     private CareerGuidenceFragment fragment;
@@ -253,6 +259,7 @@ public class MainActivity extends ActionBarActivity
             case R.id.imageClassroom:
 
                 sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
+                editor = sp.edit();
                 menuItem = menu1.findItem(R.id.action_login);
                 if (menuItem.getTitle().equals("Login")) {
                     Log.d("am i null", "onClick: " + (menuItem == null ? "am null" : "not null"));
@@ -260,6 +267,54 @@ public class MainActivity extends ActionBarActivity
                 } else if (sp.getString("CLASS", null).equals("10")) {
                     startActivity(new Intent(this, TenthActivity.class));
                     //onOptionsItemSelected(menuItem);
+                } else if (sp.getString("CLASS", null).equals("guest")) {
+                    LayoutInflater li = LayoutInflater.from(MainActivity.this);
+                    //Creating a view to get the dialog box
+                    View guestDialog = li.inflate(R.layout.dialog_guest, null);
+                    final TextView txtName = guestDialog.findViewById(R.id.txtName);
+
+                    btnTenth = guestDialog.findViewById(R.id.btnTenth);
+                    btnEleventh = guestDialog.findViewById(R.id.btnEleventh);
+                    btnTwelth = guestDialog.findViewById(R.id.btnTwelth);
+
+                    final AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
+                    // Adding our dialog box to the view of alert dialog
+                    alert.setView(guestDialog);
+                    //Creating an alert dialog
+                    final AlertDialog alertDialog = alert.create();
+                    alertDialog.show();
+                    btnTenth.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            intent = new Intent(MainActivity.this, TenthActivity.class);
+                            startActivity(intent);
+                            alertDialog.dismiss();
+
+                        }
+                    });
+                    btnEleventh.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            class1 = btnEleventh.getText().toString();
+                            intent = new Intent(MainActivity.this, TabActivity.class);
+                            editor.putString("CLASS1", class1);
+                            editor.commit();
+                            startActivity(intent);
+                            alertDialog.dismiss();
+                        }
+                    });
+                    btnTwelth.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            class1 = btnTwelth.getText().toString();
+                            intent = new Intent(MainActivity.this, TabActivity.class);
+                            editor.putString("CLASS1", class1);
+                            editor.commit();
+                            startActivity(intent);
+                            alertDialog.dismiss();
+                        }
+                    });
+
                 } else
                     startActivity(new Intent(this, TabActivity.class));
                 break;
@@ -290,7 +345,6 @@ public class MainActivity extends ActionBarActivity
 //                btnAboutUs.startAnimation(animation);
                 intent = new Intent(MainActivity.this, AboutUs.class);
                 startActivity(intent);
-
                 break;
             case R.id.btn_achiever:
 //                btnAchiever.startAnimation(animation);

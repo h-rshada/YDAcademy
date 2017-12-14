@@ -23,6 +23,7 @@ public class SyllabusActivity extends AppCompatActivity {
     Toolbar toolbar ;
     UrlRequest urlRequest;
     SharedPreferences sp;
+    String class1, class2;
     private ProgressDialog loading;
     //String urlPDF="https://docs.google.com/gview?embedded=true&url=http://www.stafforini.com/txt/Covey%20-%20The%207%20habits%20of%20highly%20effective%20people.pdf";
 
@@ -74,7 +75,16 @@ public class SyllabusActivity extends AppCompatActivity {
         Log.d("Exam", exam);
         Log.d("subject", subject);
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
-        String class1 = sp.getString("CLASS", null);
+        class1 = sp.getString("CLASS", null);
+        if (class1.equals("guest")) {
+            class2 = sp.getString("CLASS1", null);
+
+            if (class2.equals("11")) {
+                class1 = "11";
+            } else {
+                class1 = "12";
+            }
+        }
         webView1.loadUrl("https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/admin/routes/syllabus/" + class1 + exam + subject + ".pdf");
         loading.dismiss();
         Log.d("PDF", "https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/admin/routes/syllabus/" + class1 + exam + subject + ".pdf");

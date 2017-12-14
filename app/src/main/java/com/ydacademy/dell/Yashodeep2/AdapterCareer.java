@@ -2,6 +2,7 @@ package com.ydacademy.dell.Yashodeep2;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +17,7 @@ import java.util.List;
 
 public class AdapterCareer extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener {
 
-    protected boolean amuser = true;
+
     List<DataCareer> data = Collections.emptyList();
     AdapterCareer.MyHolder myHolder;
     private Context context;
@@ -33,7 +34,6 @@ public class AdapterCareer extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     public void onClick(View v) {
 
     }
-
     @Override
     public void onViewAttachedToWindow(RecyclerView.ViewHolder holder) {
         super.onViewAttachedToWindow(holder);
@@ -51,16 +51,14 @@ public class AdapterCareer extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
-
         final AdapterCareer.MyHolder myHolder = (AdapterCareer.MyHolder) holder;
         DataCareer dataCareer = data.get(position);
         myHolder.txtTitle.setText(dataCareer.title);
         myHolder.txtDesc.setText(dataCareer.desc);
+        Log.d("Title", dataCareer.title);
         myHolder.txtScope.setText(dataCareer.jobscope);
         myHolder.txtRelevantCourses.setText(dataCareer.course);
     }
-
     @Override
     public int getItemCount() {
         return data.size();
@@ -77,8 +75,6 @@ public class AdapterCareer extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             txtDesc = itemView.findViewById(R.id.txtDesc);
             txtScope = itemView.findViewById(R.id.txtScope);
             txtRelevantCourses = itemView.findViewById(R.id.txtRelevantCourses);
-
-
         }
     }
 

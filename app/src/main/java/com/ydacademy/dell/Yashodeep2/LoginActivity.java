@@ -48,13 +48,16 @@ public class LoginActivity extends AppCompatActivity {
     TextView txtForgotPassword;
     @InjectView(R.id.relativeLogin)
     RelativeLayout relativeLayout;
+    @InjectView(R.id.txtSignup)
+    TextView txtSignUp;
     @InjectView(R.id.img_back)
     ImageView imageback;
     Toolbar toolbar ;
     UrlRequest urlRequest;
-    String username, password, name, id, class1;
+    String username, password, name, id, id1, name1, class1;
     SharedPreferences sp;
     Intent intent;
+    //Button btnEleventh,btnTwelth,btnTenth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +65,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         toolbar = (Toolbar) findViewById(R.id.toolbar1);
         setSupportActionBar(toolbar);
+        ButterKnife.inject(this);
         try {
             File f = new File("/data/data/com.xoxytech.ostello/shared_prefs/YourSharedPreference.xml");
             if (f.exists()) {
@@ -77,15 +81,14 @@ public class LoginActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        ButterKnife.inject(this);
+
     }
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    @OnClick({R.id.btnLogin, R.id.txtForgotPassword, R.id.img_back})
+    @OnClick({R.id.btnLogin, R.id.txtForgotPassword, R.id.img_back, R.id.txtSignup})
     public void onClick(View view) {
         switch (view.getId()) {
-
             case R.id.btnLogin:
                 Animation animation = AnimationUtils.loadAnimation(LoginActivity.this, R.anim.bounce);
                 //  btnLogin.setAnimation(animation);
@@ -108,21 +111,24 @@ public class LoginActivity extends AppCompatActivity {
 
                                                    Log.d("Response", response);
                                                    if (!response.contains("Invalid Username or password")) {
+
                                                        JSONArray jsonArray = new JSONArray(response);
                                                        for (int i = 0; i < jsonArray.length(); i++) {
                                                            JSONObject jsonObject = jsonArray.getJSONObject(i);
+
                                                            id = jsonObject.getString("id");
                                                            class1 = jsonObject.getString("class");
                                                            name = jsonObject.getString("name");
                                                        }
                                                        SharedPreferences.Editor editor = sp.edit();
+
                                                        if (!(class1.equals("10"))) {
                                                            editor.putString("ID1", id);
                                                            editor.putString("CLASS1", class1);
                                                            editor.commit();
-                                                       }
-                                                       else {
+                                                       } else {
                                                            editor.putString("ID1",null);
+                                                           editor.putString("CLASS1", null);
                                                            editor.commit();
                                                        }
                                                        editor.putString("ID", id);
@@ -133,6 +139,54 @@ public class LoginActivity extends AppCompatActivity {
                                                        explode.setDuration(500);
                                                        getWindow().setExitTransition(explode);
                                                        getWindow().setEnterTransition(explode);
+                                                       /* if(class1.equals("guest"))
+                                                        {
+                                                            LayoutInflater li = LayoutInflater.from(LoginActivity.this);
+                                                            //Creating a view to get the dialog box
+                                                            View guestDialog = li.inflate(R.layout.dialog_guest, null);
+                                                            final TextView txtName = (TextView) guestDialog.findViewById(R.id.txtName);
+
+                                                             btnTenth = (Button) guestDialog.findViewById(R.id.btnTenth);
+                                                              btnEleventh= (Button) guestDialog.findViewById(R.id.btnEleventh);
+                                                              btnTwelth= (Button) guestDialog.findViewById(R.id.btnTwelth);
+
+                                                            AlertDialog.Builder alert = new AlertDialog.Builder(LoginActivity.this);
+                                                           // Adding our dialog box to the view of alert dialog
+                                                            alert.setView(guestDialog);
+                                                            //Creating an alert dialog
+                                                            final AlertDialog alertDialog = alert.create();
+                                                            alertDialog.show();
+                                                            btnTenth.setOnClickListener(new View.OnClickListener() {
+                                                                @Override
+                                                                public void onClick(View v) {
+                                                                    intent=new Intent(LoginActivity.this,TenthActivity.class);
+                                                                    startActivity(intent);
+                                                                    finish();
+                                                                }
+                                                            });
+                                                            btnEleventh.setOnClickListener(new View.OnClickListener() {
+                                                                @Override
+                                                                public void onClick(View v) {
+                                                                    class1=btnEleventh.getText().toString();
+                                                                    intent=new Intent(LoginActivity.this, TabActivity.class);
+                                                                    intent.putExtra("Class",class1);
+                                                                    startActivity(intent);
+                                                                    finish();
+                                                                }
+                                                            });
+                                                            btnTwelth.setOnClickListener(new View.OnClickListener() {
+                                                                @Override
+                                                                public void onClick(View v) {
+                                                                    class1=btnTwelth.getText().toString();
+                                                                    intent=new Intent(LoginActivity.this, TabActivity.class);
+                                                                    intent.putExtra("Class",class1);
+                                                                    startActivity(intent);
+                                                                    finish();
+                                                                }
+                                                            });
+
+                                                        }*/
+
 
                                                        if (name.equalsIgnoreCase("Admin")) {
                                                            intent = new Intent(LoginActivity.this, StudentStatforAdmin.class);
@@ -149,6 +203,7 @@ public class LoginActivity extends AppCompatActivity {
                                                            Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_LONG).show();
                                                            finish();
                                                        }
+
                                                       /* }
                                                        else
                                                        {
@@ -182,8 +237,12 @@ public class LoginActivity extends AppCompatActivity {
                 final AlertDialog alertDialog = builder.create();
                 alertDialog.show();
                 break;
+            case R.id.txtSignup:
+                intent = new Intent(LoginActivity.this, GuestRegistrationActivity.class);
+                startActivity(intent);
+                break;
             case  R.id.img_back:
-                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
                 break;
         }

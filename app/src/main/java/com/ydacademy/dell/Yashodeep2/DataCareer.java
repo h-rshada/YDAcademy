@@ -5,7 +5,7 @@ package com.ydacademy.dell.Yashodeep2;
  */
 
 public class DataCareer {
-    String title, desc, jobscope, course, career;
+    String title, desc, jobscope, course;
 
 
 }
