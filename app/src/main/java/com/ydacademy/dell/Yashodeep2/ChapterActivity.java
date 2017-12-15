@@ -63,7 +63,8 @@ public class ChapterActivity extends AppCompatActivity {
         Log.d("ExamSubject", s + "");
 
         es = e + "" + s;
-        Log.d("E***", exam);
+        /*Log.d("E***", exam);*/
+
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         class1 = sp.getString("CLASS", null);
         standard = sp.getString("CLASS1", null);
