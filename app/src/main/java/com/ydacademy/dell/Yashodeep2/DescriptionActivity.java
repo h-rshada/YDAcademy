@@ -1,4 +1,5 @@
 package com.ydacademy.dell.Yashodeep2;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -9,7 +10,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -41,29 +41,29 @@ public class DescriptionActivity extends AppCompatActivity {
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         class1 = sp.getString("CLASS", null);
         standard = sp.getString("CLASS1", null);
-        Log.d("Class***", class1);
-        Log.d("Standard***", standard);
+       /* Log.d("Class***", class1);
+        Log.d("Standard***", standard);*/
         user = class1;
-        Log.d("User***", user);
+        /*Log.d("User***", user);*/
         if (user.equals("guest")) {
             class1 = standard;
         }
-        Log.d("Class***", class1);
+       /* Log.d("Class***", class1);*/
         exam = getIntent().getStringExtra("Exam");
         subject = getIntent().getStringExtra("Subject");
         es = getIntent().getStringExtra("ES");
         chapter = getIntent().getStringExtra("Chapter");
         id = sp.getString("ID", null);
-        Log.d("class**", class1);
-        Log.d("ES**", es);
-        Log.d("chapter**", chapter);
+       /* Log.d("class**", class1);
+       *//* Log.d("ES**", es);*//*
+        Log.d("chapter**", chapter);*/
         actionBarSetup();
         b = new Bundle();
         b = getIntent().getExtras();
         String name = b.getString("data");
         String arr[] = name.split(" ");
 
-        Log.d("desc", arr[0]);
+       /* Log.d("desc", arr[0]);*/
 
         if (user.equals("guest")) {
             for (int i = 0; i < 10; i++) {
