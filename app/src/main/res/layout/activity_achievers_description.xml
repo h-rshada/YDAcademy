@@ -3,6 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -10,45 +11,34 @@
         android:layout_height="match_parent"
         tools:context="com.ydacademy.dell.Yashodeep2.DirectorInfo">
 
-        <!-- <LinearLayout
-             android:id="@+id/linearlayoutone"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:gravity="center_horizontal">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:titleTextColor="#ffff">
 
-             <android.support.v7.widget.CardView
-                 android:id="@+id/cv"
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:layout_centerInParent="true"
-                 android:focusable="true"
-                 android:focusableInTouchMode="true"
-                 app:cardCornerRadius="6dp"
-                 app:cardElevation="3dp"
-                 app:cardUseCompatPadding="true">
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-                 <ProgressBar
-                     android:id="@+id/progress"
-                     android:layout_width="60dp"
-                     android:layout_height="60dp"
-                     android:layout_gravity="center"
-                     android:layout_marginTop="0dp" />
 
-                 <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                     android:id="@+id/profile_image"
-                     android:layout_width="150dp"
-                     android:layout_height="150dp"
-                     android:layout_centerHorizontal="true"
-                     android:layout_centerVertical="true"
-                     android:layout_gravity="center"
-                     android:layout_marginBottom="10dp"
-                     android:layout_marginTop="5dp"
-                     android:src="@drawable/directorimage"
-                     app:border_color="#000000"
-                     app:border_width="3dp" />
-             </android.support.v7.widget.CardView>
+                android:layout_marginStart="16dp"
+                android:src="@drawable/leftarrow" />
 
-         </LinearLayout>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="About Us"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+
+                />
+
+        </android.support.v7.widget.Toolbar>
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardviewinfo"
@@ -56,6 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/linearlayoutone"
             android:layout_centerInParent="true"
+            android:layout_marginTop="120dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:padding="6dp"

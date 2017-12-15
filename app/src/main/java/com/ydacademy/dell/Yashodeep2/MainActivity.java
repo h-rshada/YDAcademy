@@ -32,6 +32,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.andexert.library.RippleView;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.DefaultSliderView;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
@@ -54,7 +55,8 @@ public class MainActivity extends ActionBarActivity
     /*@InjectView(R.id.btn_director)
     AppCompatButton btn_director;*/
     @InjectView(R.id.imageClassroom)
-    ImageView imageClassroom;
+    Button imageClassroom;
+
     Menu menu1, navbar_menu;
     @InjectView(R.id.btn_Staff)
     AppCompatButton btnStaff;
@@ -72,6 +74,9 @@ public class MainActivity extends ActionBarActivity
     MenuItem menuItem;
     String itemname;
     Intent intent;
+
+    @InjectView(R.id.more)
+    RippleView rippleView;
     Animation animation;
     Button btnEleventh, btnTwelth, btnTenth;
     private Toast toast;
@@ -461,5 +466,20 @@ public class MainActivity extends ActionBarActivity
                 Log.d("****", "Item**** ");
             }
         }
+        rippleView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e("Sample", "Click Rect !");
+            }
+        });
+        rippleView.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Log.d("Sample", "Ripple completed");
+            }
+
+        });
     }
 }
+
