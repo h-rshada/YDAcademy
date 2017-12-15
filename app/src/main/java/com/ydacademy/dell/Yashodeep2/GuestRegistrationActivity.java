@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -45,21 +46,21 @@ public class GuestRegistrationActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                name = edtName.getText().toString();
+                name = edtName.getText().toString().trim();
 
                 if (name.length() == 0) {
                     edtName.setError("Please enter name");
                     flag = 1;
                 }
-                password = edtPass.getText().toString();
-                emailid = edtEmail.getText().toString();
+                password = edtPass.getText().toString().trim();
+                emailid = edtEmail.getText().toString().trim();
                 String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
-                if (emailid.length() == 0) {
+                if (!(emailid.matches(emailPattern)) || emailid.length() == 0) {
                     edtEmail.setError("Please enter emailid");
                     flag = 1;
                 }
-                phone = edtPhone.getText().toString();
+                phone = edtPhone.getText().toString().trim();
                 if (phone.length() < 10 || phone.length() == 0) {
                     edtPhone.setError("Please enter phone number");
                     flag = 1;
@@ -73,9 +74,15 @@ public class GuestRegistrationActivity extends AppCompatActivity {
                                                public void onSuccess(String response) {
                                                    Log.d("Response", response);
                                                    if (response.contains("OK")) {
+
+                                                       Toast.makeText(GuestRegistrationActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
                                                        Intent intent = new Intent(GuestRegistrationActivity.this, LoginActivity.class);
                                                        startActivity(intent);
+                                                       GuestRegistrationActivity.this.finish();
+                                                   } else if (response.contains("EXISTS")) {
+                                                       Toast.makeText(GuestRegistrationActivity.this, "User already exist", Toast.LENGTH_LONG).show();
                                                    }
+
 
                                                }
                                            }
@@ -84,6 +91,7 @@ public class GuestRegistrationActivity extends AppCompatActivity {
 
             }
         });
+        flag = 0;
 
     }
 }
