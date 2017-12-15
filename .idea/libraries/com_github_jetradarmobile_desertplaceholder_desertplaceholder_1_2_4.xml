@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.github.jetradarmobile.desertplaceholder:desertplaceholder-1.2.4">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/desertplaceholder-1.2.4.aar/c616660a643985889222cda200883bf2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/desertplaceholder-1.2.4.aar/c616660a643985889222cda200883bf2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/desertplaceholder-1.2.4.aar/39a9de645482c7c221c42b838155c4df/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/desertplaceholder-1.2.4.aar/39a9de645482c7c221c42b838155c4df/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
