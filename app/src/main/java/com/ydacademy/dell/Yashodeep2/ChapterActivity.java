@@ -48,7 +48,6 @@ public class ChapterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter);
-
         ButterKnife.inject(this);
         toolbar = (Toolbar) findViewById(R.id.toolbar1);
         setSupportActionBar(toolbar);
@@ -138,6 +137,7 @@ public class ChapterActivity extends AppCompatActivity {
         intent.putExtra("ES", es);
         intent.putExtra("position", (position + 1) + "");
         startActivity(intent);
+        finish();
     }
 
     @OnClick(R.id.img_back) /* , R.id.fab*/
