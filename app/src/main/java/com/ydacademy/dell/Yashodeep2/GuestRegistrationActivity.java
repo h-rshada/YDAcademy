@@ -2,7 +2,6 @@ package com.ydacademy.dell.Yashodeep2;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -95,8 +94,9 @@ public class GuestRegistrationActivity extends AppCompatActivity {
                                                    if (response.contains("OK")) {
 
                                                        Toast.makeText(GuestRegistrationActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
-                                                       Intent intent = new Intent(GuestRegistrationActivity.this, LoginActivity.class);
-                                                       startActivity(intent);
+                                                       onBackPressed();
+                                                       /*Intent intent = new Intent(GuestRegistrationActivity.this, LoginActivity.class);
+                                                       startActivity(intent);*/
                                                        GuestRegistrationActivity.this.finish();
                                                    } else if (response.contains("EXISTS")) {
                                                        Toast.makeText(GuestRegistrationActivity.this, "User already exist", Toast.LENGTH_LONG).show();
@@ -106,7 +106,6 @@ public class GuestRegistrationActivity extends AppCompatActivity {
                                            }
                     );
                 }
-
             }
         });
         flag = 0;
