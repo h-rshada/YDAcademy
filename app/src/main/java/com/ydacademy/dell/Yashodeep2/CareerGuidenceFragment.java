@@ -1,6 +1,4 @@
 package com.ydacademy.dell.Yashodeep2;
-
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;

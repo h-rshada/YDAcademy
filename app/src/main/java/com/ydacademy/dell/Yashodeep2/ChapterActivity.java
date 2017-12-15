@@ -33,11 +33,10 @@ public class ChapterActivity extends AppCompatActivity {
     @InjectView(R.id.img_back)
     ImageView imageView;
     Toolbar toolbar ;
-    /* @InjectView(R.id.txtListChapters)TextView txtListChapter;*/
     UrlRequest urlRequest;
     String exam;
     Intent intent;
-    String subject, class1, chapter, es, chaptercode;
+    String subject, class1, chapter, es, chaptercode, user, standard;
     SharedPreferences sp;
     List<String> chapters;
     ArrayAdapter adapter;
@@ -68,7 +67,13 @@ public class ChapterActivity extends AppCompatActivity {
         Log.d("E***", exam);
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         class1 = sp.getString("CLASS", null);
+        standard = sp.getString("CLASS1", null);
         Log.d("Class***", class1);
+        Log.d("Standard***", standard);
+        user = class1;
+        if (user.equals("guest")) {
+            class1 = standard;
+        }
 
         getData();
     }

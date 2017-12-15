@@ -71,22 +71,6 @@ public class TabActivity extends AppCompatActivity {
         viewPager.setCurrentItem(0);
     }
 
-   /* @Override
-    public void onBackPressed() {
-        if (back_pressed + 2000 > System.currentTimeMillis()) {
-            // need to cancel the toast here
-            toast.cancel();
-            // code for exit
-            startActivity(new Intent(this, MainActivity.class));
-
-        } else {
-
-            toast = Toast.makeText(getBaseContext(), "Press once again to logout!", Toast.LENGTH_SHORT);
-            toast.show();
-        }
-        back_pressed = System.currentTimeMillis();
-    }*/
-
     @OnClick({R.id.img_back}) /* , R.id.fab*/
     public void onClick(View view) {
         switch (view.getId()) {

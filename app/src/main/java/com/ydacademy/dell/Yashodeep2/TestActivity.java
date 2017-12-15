@@ -44,7 +44,7 @@ public class TestActivity extends AppCompatActivity {
     @InjectView(R.id.txt_timer) TextView Text_timer;
     @InjectView(R.id.txt_queNumber) TextView text_queNumber;
     CountDownTimer countDownTimer;
-    String answerKey, ans, data, userans, exam, subject, chapter, es, class1, responseCheck;
+    String answerKey, ans, data, userans, exam, subject, chapter, es, class1, standard, user;
     ProgressBar progressBar ;
     int count, c, i, flag = 0, state = 0;
     UrlRequest urlRequest;
@@ -68,7 +68,15 @@ public class TestActivity extends AppCompatActivity {
         chapter=getIntent().getStringExtra("Chapter");
         Log.d("ES***",es+chapter);
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
-        class1=sp.getString("CLASS",null);
+        class1 = sp.getString("CLASS", null);
+        standard = sp.getString("CLASS1", null);
+        Log.d("Class***", class1);
+        Log.d("Standard***", standard);
+        user = class1;
+        Log.d("User***", user);
+        if (user.equals("guest")) {
+            class1 = standard;
+        }
         Log.d("Class***",class1);
         actionBarSetup();
         progressBar=(ProgressBar)findViewById(R.id.progress);
@@ -180,8 +188,8 @@ public class TestActivity extends AppCompatActivity {
 
     public void load_image()
     {
-        Log.d("Url", "http://yashodeepacademy.co.in/" + class1 + "/" + es + chapter + "/q" + (count + 1) + ".PNG");
-        Glide.with(getApplicationContext()).load("http://yashodeepacademy.co.in/" + class1 + "/" + es + chapter + "/q" + (count + 1) + ".PNG").asBitmap().override(600, 600)
+        Log.d("Url", "http://yashodeepacademy.co.in/admin/routes/" + class1 + "/" + es + chapter + "/q" + (count + 1) + ".PNG");
+        Glide.with(getApplicationContext()).load("http://yashodeepacademy.co.in/admin/routes/" + class1 + "/" + es + chapter + "/q" + (count + 1) + ".PNG").asBitmap().override(600, 600)
                    .placeholder(null).listener(new RequestListener<String, Bitmap>() {
                @Override
                public boolean onException(Exception e, String model, Target<Bitmap> target, boolean isFirstResource) {
@@ -202,8 +210,8 @@ public class TestActivity extends AppCompatActivity {
                            public void onClick(View v) {
                                Intent intent = new Intent(TestActivity.this, TabActivity.class);
                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                               TestActivity.this.finishAffinity();
                                startActivity(intent);
+                               TestActivity.this.finish();
 
                            }
                        });
