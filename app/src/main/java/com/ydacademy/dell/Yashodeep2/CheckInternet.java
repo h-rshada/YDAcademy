@@ -1,5 +1,4 @@
 package com.ydacademy.dell.Yashodeep2;
-
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;

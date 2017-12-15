@@ -35,7 +35,7 @@ public class ResultActivity extends AppCompatActivity {
     @InjectView(R.id.txt_performance)
     TextView text_performance;
     @InjectView(R.id.iv_performance)ImageView performance;
-    String name, userans, result, exam, subject, es, chapter, class1, date, time;
+    String name, userans, result, exam, subject, es, chapter, class1, date, time, standard, user;
     int marks = 0, attained = 0;
     UrlRequest urlRequest;
     String id;
@@ -49,11 +49,21 @@ public class ResultActivity extends AppCompatActivity {
 
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         class1 = sp.getString("CLASS", null);
+        standard = sp.getString("CLASS1", null);
+        Log.d("Class***", class1);
+        Log.d("Standard***", standard);
+        user = class1;
+        Log.d("User***", user);
+        if (user.equals("guest")) {
+            class1 = standard;
+        }
+        Log.d("Class***", class1);
         exam = getIntent().getStringExtra("Exam");
         subject = getIntent().getStringExtra("Subject");
         es = getIntent().getStringExtra("ES");
         chapter = getIntent().getStringExtra("Chapter");
         id = sp.getString("ID", null);
+        Log.d("IDR", id);
         date = getIntent().getStringExtra("Date");
         time = getIntent().getStringExtra("Time");
         b = new Bundle();
@@ -114,12 +124,12 @@ public class ResultActivity extends AppCompatActivity {
         String arr1[] = DateFormat.format("yyyy-MM-dd hh:mm:ss", d.getTime()).toString().split(" ");
         urlRequest = UrlRequest.getObject();
         urlRequest.setContext(ResultActivity.this);
-        Log.d("URL", "http://yashodeepacademy.co.in/updatestudentresult.php?student_id=" + id + "&examcode=" + es + chapter + "&score=" + marks + "-50" + "&date=" + arr1[0] + "&time=" + arr1[1]);
-        urlRequest.setUrl("http://yashodeepacademy.co.in/updatestudentresult.php?student_id=" + id + "&examcode=" + es + chapter + "&score=" + marks + "-50" + "&date=" + arr1[0] + "&time=" + arr1[1]);
+        Log.d("URL", "http://yashodeepacademy.co.in/updatestudentresult.php?student_id=" + id + "&examcode=" + es + chapter + "&score=" + marks + "-50" + "&date=" + arr1[0] + "&time=" + arr1[1] + "&class=" + class1);
+        urlRequest.setUrl("http://yashodeepacademy.co.in/updatestudentresult.php?student_id=" + id + "&examcode=" + es + chapter + "&score=" + marks + "-50" + "&date=" + arr1[0] + "&time=" + arr1[1] + "&class=" + class1);
         urlRequest.getResponse(new ServerCallback() {
             @Override
             public void onSuccess(String response) {
-                Log.d("Response", response);
+                Log.d("ResponseResult", response);
 
             }
         });

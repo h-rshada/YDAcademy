@@ -1,9 +1,11 @@
 package com.ydacademy.dell.Yashodeep2;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -25,7 +27,7 @@ import butterknife.OnClick;
 public class StartTest extends AppCompatActivity {
 
     @InjectView(R.id.btn_startTest)Button start_test;
-    String exam, subject, class1, es, id, chapter;
+    String exam, subject, class1, es, id, chapter, standard, user;
     int count;
     @InjectView(R.id.img_back)
     ImageView imageback;
@@ -47,6 +49,14 @@ public class StartTest extends AppCompatActivity {
         es = getIntent().getStringExtra("ES");
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         class1 = sp.getString("CLASS", null);
+        standard = sp.getString("CLASS1", null);
+        Log.d("Class***", class1);
+        Log.d("Standard***", standard);
+        user = class1;
+        Log.d("User***", user);
+        if (user.equals("guest")) {
+            class1 = standard;
+        }
         id = sp.getString("ID", null);
 
         Log.d("Class***", class1);
@@ -79,19 +89,48 @@ public class StartTest extends AppCompatActivity {
 
                                                        Log.d("Count****", jsonObject.getInt("count(id)") + "");
                                                    }
+                                                   if (user.equals("guest")) {
+                                                       if (count < 1) {
+                                                           Intent intent = new Intent(StartTest.this, TestActivity.class);
+                                                           intent.putExtra("Class", class1);
+                                                           intent.putExtra("Subject", subject);
+                                                           intent.putExtra("Exam", exam);
+                                                           intent.putExtra("ES", es);
+                                                           intent.putExtra("Chapter", chapter);
+                                                           startActivity(intent);
+                                                           finish();
+                                                       } else {
+                                                           AlertDialog.Builder alertDialog = new AlertDialog.Builder(StartTest.this);
 
-                                                   if (count < 2) {
-                                                       Intent intent = new Intent(StartTest.this, TestActivity.class);
-                                                       intent.putExtra("Class", class1);
-                                                       intent.putExtra("Subject", subject);
-                                                       intent.putExtra("Exam", exam);
-                                                       intent.putExtra("ES", es);
-                                                       intent.putExtra("Chapter", chapter);
-                                                       finish();
-                                                       startActivity(intent);
-                                                   } else
-                                                       Toast.makeText(StartTest.this, "Sorry,You can attemp test maximum 2 times", Toast.LENGTH_LONG).show();
+                                                           alertDialog.setMessage("To solve more test you have to subscribed ");
 
+                                                           alertDialog.setPositiveButton(
+                                                                   "Ok",
+                                                                   new DialogInterface.OnClickListener() {
+                                                                       public void onClick(DialogInterface dialog, int id) {
+                                                                           dialog.cancel();
+                                                                           Intent intent = new Intent(StartTest.this, TabActivity.class);
+                                                                           startActivity(intent);
+                                                                           finish();
+
+                                                                       }
+                                                                   });
+                                                           alertDialog.show();
+                                                       }
+                                                   } else {
+                                                       if (count < 2) {
+                                                           Intent intent = new Intent(StartTest.this, TestActivity.class);
+                                                           intent.putExtra("Class", class1);
+                                                           intent.putExtra("Subject", subject);
+                                                           intent.putExtra("Exam", exam);
+                                                           intent.putExtra("ES", es);
+                                                           intent.putExtra("Chapter", chapter);
+                                                           startActivity(intent);
+                                                           finish();
+                                                       } else
+                                                           Toast.makeText(StartTest.this, "Sorry,You can attemp test maximum 2 times", Toast.LENGTH_LONG).show();
+
+                                                   }
                                                } catch (JSONException e1) {
                                                    e1.printStackTrace();
                                                }
@@ -102,6 +141,7 @@ public class StartTest extends AppCompatActivity {
             case R.id.img_back:
                 Intent intent=new Intent(StartTest.this,TabActivity.class);
                 startActivity(intent);
+                finish();
                 break;
         }
     }

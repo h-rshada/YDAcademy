@@ -126,7 +126,7 @@ public class MainActivity extends ActionBarActivity
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(subActionButtonSize, subActionButtonSize);
         itemIcon1.setImageDrawable(getResources().getDrawable(R.drawable.facebook));
         itemIcon2.setImageDrawable(getResources().getDrawable(R.drawable.twitter));
-        itemIcon3.setImageDrawable(getResources().getDrawable(R.drawable.google));
+        itemIcon3.setImageDrawable(getResources().getDrawable(R.drawable.whatsapp));
         itemIcon4.setImageDrawable(getResources().getDrawable(R.drawable.linkedin));
         SubActionButton button1 = itemBuilder.setContentView(itemIcon1).setLayoutParams(params).build();
         SubActionButton button2 = itemBuilder.setContentView(itemIcon2).setLayoutParams(params).build();
@@ -191,9 +191,12 @@ public class MainActivity extends ActionBarActivity
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://plus.google.com/discover"));
-                startActivity(intent);
-
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND).setData(Uri.parse("whatsapp://send?text=http://www.example.com"));
+                sendIntent.putExtra(Intent.EXTRA_TEXT,
+                        "Hey check out my app at: https://play.google.com/store/apps/details?id=com.ydacademy.dell.Yashodeep2");
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
