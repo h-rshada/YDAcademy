@@ -1,11 +1,16 @@
 package com.ydacademy.dell.Yashodeep2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnClick;
 
 public class AchieversDescription extends AppCompatActivity {
 
@@ -21,6 +26,12 @@ public class AchieversDescription extends AppCompatActivity {
     TextView txtDescription;
     @InjectView(R.id.txtDesc2)
     TextView txtDescription1;
+    TextView textView;
+    @InjectView(R.id.img_back)
+    ImageView imageback;
+    /*@InjectView(R.id.btn_director)
+       AppCompatButton btn_director;*/
+    Toolbar toolbar;
     /*  @InjectView(R.id.progress)
       ProgressBar progressBar;*/
     String id, name, desc, url, class1;
@@ -34,6 +45,8 @@ public class AchieversDescription extends AppCompatActivity {
         setContentView(R.layout.activity_achievers_description);
         ButterKnife.inject(this);
         // id = getIntent().getStringExtra("Id");
+        toolbar = (Toolbar) findViewById(R.id.toolbar1);
+        setSupportActionBar(toolbar);
         name = getIntent().getStringExtra("Name");
         class1 = getIntent().getStringExtra("Class");
         desc = getIntent().getStringExtra("Desc");
@@ -64,6 +77,18 @@ public class AchieversDescription extends AppCompatActivity {
                 .into(imageProfile);
     }
 */
+    }
+
+    @OnClick({R.id.img_back}) /* , R.id.fab*/
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.img_back:
+                Intent intent = new Intent(AchieversDescription.this, OurAchievers.class);
+                startActivity(intent);
+                break;
+
+        }
+
     }
 }
 

@@ -11,14 +11,16 @@
         android:animateLayoutChanges="true"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/iv"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/quote"
-            android:gravity="center_vertical"
-            android:minHeight="?android:attr/listPreferredItemHeight"
-            android:padding="20dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="cursive"
+            android:text="Find out what you like doing best, and get someone to pay you for doing it. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t-Yd Academy"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="normal" />
 
         <TextView
             android:id="@+id/header1"
