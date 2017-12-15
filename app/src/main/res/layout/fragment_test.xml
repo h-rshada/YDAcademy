@@ -302,7 +302,6 @@
                     android:textColor="@color/white"
                     android:textSize="25sp"
                     android:textStyle="bold" />
-
                 <TextView
                     android:id="@+id/txtMaths3"
                     android:layout_width="match_parent"
