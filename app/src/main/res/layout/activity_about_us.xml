@@ -6,139 +6,140 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.ydacademy.dell.Yashodeep2.AboutUs">
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar1"
-        android:layout_width="fill_parent"
-        android:layout_height="58dp"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:titleTextColor="#ffff">
-
-        <ImageView
-            android:id="@+id/img_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-
-            android:layout_marginStart="16dp"
-            android:src="@drawable/leftarrow" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="About Us"
-            android:textColor="@color/colorWhite"
-            android:textSize="15dp"
-
-            />
-
-    </android.support.v7.widget.Toolbar>
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/toolbar1">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:titleTextColor="#ffff">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/aboutusback" />
-
-
-        <ImageView
-            android:id="@+id/logoimage"
-            android:layout_width="220dp"
-            android:layout_height="220dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:gravity="center"
-            android:src="@drawable/ydlogo" />
-
-
-        <android.support.v4.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/logoimage"
-            android:layout_centerInParent="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginBottom="60dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp">
-
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/logoimage"
-
-                android:layout_gravity="fill_horizontal"
-                android:text="@string/aboutus"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-        </android.support.v4.widget.NestedScrollView>
-
-        <LinearLayout
-            android:id="@+id/LinearLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="550dp"
-            android:orientation="horizontal">
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/cardDirectorDesk"
+            <ImageView
+                android:id="@+id/img_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/leftarrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="About Us"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_weight="1"
-                android:background="?android:selectableItemBackground"
-                android:clickable="true"
-                android:clipChildren="false"
-                android:clipToPadding="false"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                app:cardElevation="2dp"
-                app:cardPreventCornerOverlap="false">
+                android:layout_below="@+id/toolbar1">
 
-                <RelativeLayout
-
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/aboutusback" />
 
-                    <ImageView
-                        android:id="@+id/imageDirector"
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:layout_alignParentTop="true"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/directordesk" />
 
-                    <android.support.v7.widget.AppCompatButton
-                        android:id="@+id/btn_director"
+                <ImageView
+                    android:id="@+id/logoimage"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:src="@drawable/ydlogo" />
+
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/logoimage"
+                    android:layout_gravity="fill_horizontal">
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/imageDirector"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="0dp"
-                        android:background="@color/primary_text"
-                        android:text="From Director's Desk"
-                        android:textColor="@color/white"
-                        android:textSize="15dp" />
+                        android:layout_below="@+id/logoimage"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/aboutus"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </android.support.v4.widget.NestedScrollView>
+
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/LinearLayout3"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardDirectorDesk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="650dp"
+                        android:layout_weight="1"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="0.0px"
+                        app:cardElevation="2dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageDirector"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_alignParentTop="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/directordesk" />
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/btn_director"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imageDirector"
+                                android:layout_gravity="center"
+
+                                android:layout_marginTop="0dp"
+                                android:background="@color/primary_text"
+                                android:text="From Director's Desk"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
-        </LinearLayout>
-
-
-    </RelativeLayout>
-    </ScrollView>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
 </LinearLayout>

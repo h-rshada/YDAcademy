@@ -1,6 +1,5 @@
 package com.ydacademy.dell.Yashodeep2;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -75,8 +74,9 @@ public class TabActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.img_back:
-                Intent intent = new Intent(TabActivity.this, MainActivity.class);
-                startActivity(intent);
+                onBackPressed();
+               /* Intent intent = new Intent(TabActivity.this, MainActivity.class);
+                startActivity(intent);*/
                 break;
         }
 

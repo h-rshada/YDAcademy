@@ -1,66 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:focusable="false"
-    android:focusableInTouchMode="false"
+    android:background="@drawable/bg"
     tools:context="com.ydacademy.dell.Yashodeep2.GuestRegistrationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffff">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="onClick"
+            android:src="@drawable/leftarrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Guest Login"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+
+    </android.support.v7.widget.Toolbar>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
         android:focusable="false"
         android:focusableInTouchMode="false"
+
         android:orientation="vertical"
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="400sp"
-            android:layout_height="200sp"
+            android:layout_width="150sp"
+            android:layout_height="100sp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15sp"
+            android:layout_marginTop="100sp"
             android:layout_weight="0"
+
             android:src="@drawable/logowithoutshdw" />
 
-        <android.support.design.widget.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center">
+            android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/editTextUsername"
-                android:layout_width="300sp"
-                android:layout_height="60sp"
-                android:background="@drawable/round"
-                android:gravity="center"
-                android:hint="Full Name"
-                android:inputType="text"
-                android:textSize="25dp" />
-        </android.support.design.widget.TextInputLayout>
-        <!--
-                <android.support.design.widget.TextInputLayout
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editTextUsername"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="0dp"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center">
+                    android:layout_height="35dp"
 
-                    <EditText
-                        android:id="@+id/editTextUserId"
-                        android:layout_width="300sp"
-                        android:layout_height="60sp"
-                        android:background="@drawable/round"
-                        android:gravity="center"
-                        android:hint="User Id"
-                        android:inputType="textEmailAddress"
-                        android:textSize="25dp" />
-                </android.support.design.widget.TextInputLayout>-->
+                    android:background="@drawable/round"
+                    android:gravity="center"
+                    android:hint="User Name"
+                    android:inputType="text"
+                    android:textSize="15dp" />
+
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,78 +98,98 @@
 
             <EditText
                 android:id="@+id/editTextPassword"
-                android:layout_width="300sp"
-                android:layout_height="60sp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dp"
                 android:background="@drawable/round"
                 android:editable="false"
                 android:gravity="center"
-                android:hint="Password"
                 android:maxLines="1"
                 android:singleLine="true"
                 android:text="Guest123"
-                android:textSize="25dp" />
+                android:textSize="15dp" />
 
         </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            android:layout_marginTop="0dp"
-            android:gravity="center">
+            android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/editTextPhone"
-                android:layout_width="300sp"
-                android:layout_height="60sp"
-                android:background="@drawable/round"
-                android:gravity="center"
-                android:hint="Mobile Number"
-                android:inputType="phone|number"
-                android:maxLength="10"
-                android:textSize="25dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center">
 
-        </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/editTextPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/round"
+                    android:gravity="center"
+                    android:hint="Mobile Number"
 
-        <android.support.design.widget.TextInputLayout
+                    android:inputType="phone|number"
+                    android:maxLength="10"
+                    android:textSize="15dp" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            android:layout_marginTop="0dp"
-            android:gravity="center">
+            android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/editTextEmail"
-                android:layout_width="300sp"
-                android:layout_height="60sp"
-                android:background="@drawable/round"
-                android:gravity="center"
-                android:hint="Email Id"
-                android:imeOptions="actionUnspecified"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textSize="25dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center">
 
-        </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/round"
+                    android:gravity="center"
+                    android:hint="Email Id"
+                    android:imeOptions="actionUnspecified"
+
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="15dp" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="*Note:- Guest123 wii be the password for Guest user">
+
+        </TextView>
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/buttonRegister"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/regiterround"
-            android:paddingBottom="0dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:paddingTop="0dp"
+            android:layout_marginTop="20dp"
+            android:background="#318CE7	"
+            android:clickable="true"
+            android:stateListAnimator="@drawable/state_list_animator_z"
             android:text="Register"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textColor="#d3d3d3"
+            android:textSize="15dp" />
 
     </LinearLayout>
 
 
-</ScrollView>
+</RelativeLayout>

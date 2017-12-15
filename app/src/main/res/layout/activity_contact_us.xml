@@ -90,7 +90,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="Near MIT College, Dehu Phata, Alandi, Pune-412105.\n Mob No- 9552827081"
+                    android:text="Near Sai Mandir Wadmukhwadi, alandi, Pune\n Mob No- 9552827081"
                     android:textSize="17dp"
                     android:textStyle="italic" />
             </LinearLayout>

@@ -2,7 +2,6 @@ package com.ydacademy.dell.Yashodeep2;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -20,7 +19,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,9 +30,9 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.andexert.library.RippleView;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.DefaultSliderView;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
@@ -49,7 +47,6 @@ import butterknife.OnClick;
 public class MainActivity extends ActionBarActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-
     public FragmentManager fragmentManager;
     @InjectView(R.id.slider)
     SliderLayout sliderShow;
@@ -58,7 +55,8 @@ public class MainActivity extends ActionBarActivity
     /*@InjectView(R.id.btn_director)
     AppCompatButton btn_director;*/
     @InjectView(R.id.imageClassroom)
-    ImageView imageClassroom;
+    Button imageClassroom;
+
     Menu menu1, navbar_menu;
     @InjectView(R.id.btn_Staff)
     AppCompatButton btnStaff;
@@ -76,6 +74,9 @@ public class MainActivity extends ActionBarActivity
     MenuItem menuItem;
     String itemname;
     Intent intent;
+
+    @InjectView(R.id.more)
+    RippleView rippleView;
     Animation animation;
     Button btnEleventh, btnTwelth, btnTenth;
     private Toast toast;
@@ -271,7 +272,10 @@ public class MainActivity extends ActionBarActivity
                     startActivity(new Intent(this, TenthActivity.class));
                     //onOptionsItemSelected(menuItem);
                 } else if (sp.getString("CLASS", null).equals("guest")) {
-                    LayoutInflater li = LayoutInflater.from(MainActivity.this);
+                    intent = new Intent(MainActivity.this, Guest.class);
+                    startActivityForResult(intent, 100);
+                }
+                   /* LayoutInflater li = LayoutInflater.from(MainActivity.this);
                     //Creating a view to get the dialog box
                     View guestDialog = li.inflate(R.layout.dialog_guest, null);
                     final TextView txtName = guestDialog.findViewById(R.id.txtName);
@@ -318,7 +322,8 @@ public class MainActivity extends ActionBarActivity
                         }
                     });
 
-                } else
+                } */
+                else
                     startActivity(new Intent(this, TabActivity.class));
                 break;
             case R.id.btn_career:
@@ -368,7 +373,7 @@ public class MainActivity extends ActionBarActivity
         getMenuInflater().inflate(R.menu.main, menu);
 //        getMenuInflater().inflate(R.menu.activity_main_drawer, menu);
         menu1 = menu;
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -450,7 +455,7 @@ public class MainActivity extends ActionBarActivity
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 100 && resultCode == RESULT_OK) {
-            if (data.getBooleanExtra("data", false)) {
+            if (data.getBooleanExtra("data", true)) {
                 menuItem.setTitle("Logout");
                 NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
               /*  SharedPreferences sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
@@ -461,5 +466,20 @@ public class MainActivity extends ActionBarActivity
                 Log.d("****", "Item**** ");
             }
         }
+        rippleView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e("Sample", "Click Rect !");
+            }
+        });
+        rippleView.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Log.d("Sample", "Ripple completed");
+            }
+
+        });
     }
 }
+

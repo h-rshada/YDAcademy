@@ -1,9 +1,12 @@
 package com.ydacademy.dell.Yashodeep2;
 
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,6 +32,7 @@ public class GuestRegistrationActivity extends AppCompatActivity {
     UrlRequest urlRequest;
     String name, password, emailid, phone;
     int flag = 0;
+    ProgressDialog loading;
 
 
     @Override
@@ -66,12 +70,27 @@ public class GuestRegistrationActivity extends AppCompatActivity {
                     flag = 1;
                 }
                 if (flag == 0) {
+
+                    loading = ProgressDialog.show(GuestRegistrationActivity.this, "Loading", "Please wait.....", false, true);
+                    loading.setOnKeyListener(new ProgressDialog.OnKeyListener() {
+                        @Override
+                        public boolean onKey(DialogInterface arg0, int keyCode,
+                                             KeyEvent event) {
+                            // TODO Auto-generated method stub
+                            if (keyCode == KeyEvent.KEYCODE_BACK) {
+                                finish();
+                                loading.dismiss();
+                            }
+                            return true;
+                        }
+                    });
                     urlRequest = UrlRequest.getObject();
                     urlRequest.setContext(getApplicationContext());
                     urlRequest.setUrl("http://yashodeepacademy.co.in/admin/routes/server/putUserData.php?name=" + name + "&password=" + password + "&emailid=" + emailid + "&phone=" + phone);
                     urlRequest.getResponse(new ServerCallback() {
                                                @Override
                                                public void onSuccess(String response) {
+                                                   loading.dismiss();
                                                    Log.d("Response", response);
                                                    if (response.contains("OK")) {
 
@@ -83,7 +102,6 @@ public class GuestRegistrationActivity extends AppCompatActivity {
                                                        Toast.makeText(GuestRegistrationActivity.this, "User already exist", Toast.LENGTH_LONG).show();
                                                    }
 
-
                                                }
                                            }
                     );
@@ -94,4 +112,5 @@ public class GuestRegistrationActivity extends AppCompatActivity {
         flag = 0;
 
     }
+
 }

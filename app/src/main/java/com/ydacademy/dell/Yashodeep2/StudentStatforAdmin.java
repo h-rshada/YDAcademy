@@ -173,6 +173,7 @@ public class StudentStatforAdmin extends AppCompatActivity {
             super.onBackPressed();
         recyclerView.setVisibility(View.GONE);
         cardView1.setVisibility(View.VISIBLE);
+
     }
     @OnClick({R.id.img_back}) /* , R.id.fab*/
     public void onClick(View view) {
