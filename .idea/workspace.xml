@@ -12,28 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daea1603-2c64-4c45-a6f5-72fa097dc047" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/GuestResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/GuestTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/SubscriptionPlan.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_result.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_guest_test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_subscription_plan.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_subscription.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ChapterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/ChapterActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/DescriptionActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/DescriptionActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/StartTest.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/StartTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestActivity.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-3022">
-              <caret line="126" column="48" lean-forward="false" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
+              <caret line="125" column="50" lean-forward="false" selection-start-line="125" selection-start-column="50" selection-end-line="125" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -72,16 +51,17 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/GuestTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2">
-              <caret line="129" column="48" lean-forward="false" selection-start-line="129" selection-start-column="48" selection-end-line="129" selection-end-column="48" />
+              <caret line="131" column="50" lean-forward="false" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
               <folding>
-                <element signature="e#3788#7215#0" expanded="true" />
-                <element signature="e#5407#6035#0" expanded="true" />
-                <element signature="e#6034#6035#0" expanded="true" />
-                <element signature="e#7214#7215#0" expanded="true" />
-                <element signature="e#8663#9100#0" expanded="true" />
-                <element signature="e#9099#9100#0" expanded="true" />
-                <element signature="e#11185#11186#0" expanded="true" />
-                <element signature="e#11235#11236#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#3819#7248#0" expanded="true" />
+                <element signature="e#5440#6068#0" expanded="true" />
+                <element signature="e#6067#6068#0" expanded="true" />
+                <element signature="e#7247#7248#0" expanded="true" />
+                <element signature="e#8696#9133#0" expanded="true" />
+                <element signature="e#9132#9133#0" expanded="true" />
+                <element signature="e#11210#11211#0" expanded="true" />
+                <element signature="e#11260#11261#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,12 +71,12 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/DescriptionActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="392">
-              <caret line="143" column="8" lean-forward="false" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="8" />
+              <caret line="141" column="8" lean-forward="false" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="8" />
               <folding>
-                <element signature="e#3571#3891#0" expanded="true" />
-                <element signature="e#3890#3891#0" expanded="true" />
-                <element signature="e#3935#4110#0" expanded="true" />
-                <element signature="e#4109#4110#0" expanded="true" />
+                <element signature="e#3564#3884#0" expanded="true" />
+                <element signature="e#3883#3884#0" expanded="true" />
+                <element signature="e#3928#4103#0" expanded="true" />
+                <element signature="e#4102#4103#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,7 +89,7 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
-              <caret line="87" column="28" lean-forward="false" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+              <caret line="91" column="32" lean-forward="false" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -121,8 +101,8 @@
             <state relative-caret-position="432">
               <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding>
-                <element signature="e#621#897#0" expanded="true" />
-                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#621#900#0" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,8 +112,10 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/GuestResult.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1102">
-              <caret line="48" column="33" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="33" />
-              <folding />
+              <caret line="49" column="33" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,7 +163,7 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="281">
-              <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+              <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -2418,7 +2400,7 @@
       <option name="ACTIVITY_CLASS" value="com.example.user.ydacademy.TabActivity" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342164111" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342197498" />
       </method>
     </configuration>
     <configuration default="false" name="LoginActivity" type="AndroidRunConfigurationType" factoryName="Android App" temporary="true">
@@ -2467,7 +2449,7 @@
       <option name="ACTIVITY_CLASS" value="com.ydacademy.dell.Yashodeep2.LoginActivity" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342164111" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342197498" />
       </method>
     </configuration>
     <configuration default="false" name="GuestRegistrationActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
@@ -2516,7 +2498,7 @@
       <option name="ACTIVITY_CLASS" value="com.ydacademy.dell.Yashodeep2.GuestRegistrationActivity" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342164111" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342197498" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -2589,7 +2571,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342164111" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342197498" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2637,7 +2619,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342164111" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342197498" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2820,7 +2802,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342164113" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513342197499" />
       </method>
     </configuration>
     <list size="4">
@@ -2950,7 +2932,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513318853525</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added finish to chapter activity">
+      <created>1513342185505</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1513342185505</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3460,16 +3449,17 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/GuestTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2">
-          <caret line="129" column="48" lean-forward="false" selection-start-line="129" selection-start-column="48" selection-end-line="129" selection-end-column="48" />
+          <caret line="131" column="50" lean-forward="false" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
           <folding>
-            <element signature="e#3788#7215#0" expanded="true" />
-            <element signature="e#5407#6035#0" expanded="true" />
-            <element signature="e#6034#6035#0" expanded="true" />
-            <element signature="e#7214#7215#0" expanded="true" />
-            <element signature="e#8663#9100#0" expanded="true" />
-            <element signature="e#9099#9100#0" expanded="true" />
-            <element signature="e#11185#11186#0" expanded="true" />
-            <element signature="e#11235#11236#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3819#7248#0" expanded="true" />
+            <element signature="e#5440#6068#0" expanded="true" />
+            <element signature="e#6067#6068#0" expanded="true" />
+            <element signature="e#7247#7248#0" expanded="true" />
+            <element signature="e#8696#9133#0" expanded="true" />
+            <element signature="e#9132#9133#0" expanded="true" />
+            <element signature="e#11210#11211#0" expanded="true" />
+            <element signature="e#11260#11261#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3477,7 +3467,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/TestActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3022">
-          <caret line="126" column="48" lean-forward="false" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
+          <caret line="125" column="50" lean-forward="false" selection-start-line="125" selection-start-column="50" selection-end-line="125" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -3518,7 +3508,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
-          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -3526,12 +3516,12 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/DescriptionActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
-          <caret line="143" column="8" lean-forward="false" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="8" />
+          <caret line="141" column="8" lean-forward="false" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="8" />
           <folding>
-            <element signature="e#3571#3891#0" expanded="true" />
-            <element signature="e#3890#3891#0" expanded="true" />
-            <element signature="e#3935#4110#0" expanded="true" />
-            <element signature="e#4109#4110#0" expanded="true" />
+            <element signature="e#3564#3884#0" expanded="true" />
+            <element signature="e#3883#3884#0" expanded="true" />
+            <element signature="e#3928#4103#0" expanded="true" />
+            <element signature="e#4102#4103#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3542,7 +3532,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="87" column="28" lean-forward="false" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+          <caret line="91" column="32" lean-forward="false" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -3550,8 +3540,10 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ydacademy/dell/Yashodeep2/GuestResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1102">
-          <caret line="48" column="33" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="33" />
-          <folding />
+          <caret line="49" column="33" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3560,8 +3552,8 @@
         <state relative-caret-position="432">
           <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding>
-            <element signature="e#621#897#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#621#900#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
           </folding>
         </state>
       </provider>
