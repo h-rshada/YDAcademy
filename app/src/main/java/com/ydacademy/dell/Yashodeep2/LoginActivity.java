@@ -138,93 +138,34 @@ public class LoginActivity extends AppCompatActivity {
                                                        explode.setDuration(500);
                                                        getWindow().setExitTransition(explode);
                                                        getWindow().setEnterTransition(explode);
-
-                                                     /*  if (class1.equals("guest"))
+                                                       if (class1.equals("guest"))
                                                        {
-                                                           intent = new Intent();
-                                                           intent.putExtra("data", true);
-                                                           LoginActivity.this.finish();
-                                                           setResult(RESULT_OK, intent);
-                                                           Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_LONG).show();
-                                                       }*/
+                                                           intent = new Intent(LoginActivity.this, Guest.class);
+                                                           startActivity(intent);
+                                                           //finish();
+                                                           //onBackPressed();
 
-                                                      /* if (class1.equals("guest"))
-                                                       {
-                                                            LayoutInflater li = LayoutInflater.from(LoginActivity.this);
-                                                           //Creating a view to get the dialog box
-                                                           View guestDialog = li.inflate(R.layout.dialog_guest, null);
-                                                           final TextView txtName = guestDialog.findViewById(R.id.txtName);
-                                                           btnTenth = guestDialog.findViewById(R.id.btnTenth);
-                                                           btnEleventh = guestDialog.findViewById(R.id.btnEleventh);
-                                                           btnTwelth = guestDialog.findViewById(R.id.btnTwelth);
-                                                           final AlertDialog.Builder alert = new AlertDialog.Builder(LoginActivity.this);
-                                                           // Adding our dialog box to the view of alert dialog
-                                                           alert.setView(guestDialog);
-                                                           //Creating an alert dialog
-                                                           final AlertDialog alertDialog = alert.create();
-
-                                                           btnTenth.setOnClickListener(new View.OnClickListener() {
-                                                               @Override
-                                                               public void onClick(View v) {
-                                                                   intent = new Intent(LoginActivity.this, TenthActivity.class);
-                                                                   startActivity(intent);
-                                                                  // alertDialog.dismiss();
-
-                                                               }
-                                                           });
-                                                           btnEleventh.setOnClickListener(new View.OnClickListener() {
-                                                               @Override
-                                                               public void onClick(View v) {
-                                                                   class1 = btnEleventh.getText().toString();
-                                                                   intent = new Intent(LoginActivity.this, TabActivity.class);
-                                                                   editor.putString("CLASS1", class1);
-                                                                   editor.commit();
-                                                                   startActivity(intent);
-                                                                  // alertDialog.dismiss();
-                                                               }
-                                                           });
-                                                           btnTwelth.setOnClickListener(new View.OnClickListener() {
-                                                               @Override
-                                                               public void onClick(View v) {
-                                                                   class1 = btnTwelth.getText().toString();
-                                                                   intent = new Intent(LoginActivity.this, TabActivity.class);
-                                                                   editor.putString("CLASS1", class1);
-                                                                   editor.commit();
-                                                                   startActivity(intent);
-                                                                 //  alertDialog.dismiss();
-                                                               }
-                                                           });
-                                                           alertDialog.show();
-                                                           finish();
-                                                          // onBackPressed();
-                                                           if ((alertDialog != null) && alertDialog.isShowing())
-                                                           {
-                                                               alertDialog.dismiss();
-                                                           }
-
-                                                   }
-*/
-
-
+                                                       }
                                                        if (name.equalsIgnoreCase("Admin")) {
                                                            intent = new Intent(LoginActivity.this, StudentStatforAdmin.class);
                                                            startActivity(intent);
                                                            onBackPressed();
-
                                                        } else {
-
-                                                           intent = new Intent();
+                                                           intent = new Intent(LoginActivity.this, MainActivity.class);
+                                                           intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                                            intent.putExtra("data", true);
                                                            setResult(RESULT_OK, intent);
                                                            finish();
                                                            Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_LONG).show();
                                                        }
 
+
                                                        return;
                                                    } else {
                                                        Snackbar.make(relativeLayout, "Invalid Login", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                                                        Log.d("Invalidlogin", "onSuccess: ");
                                                    }
+
                                                } catch (JSONException e) {
                                                    e.printStackTrace();
                                                }
@@ -234,9 +175,7 @@ public class LoginActivity extends AppCompatActivity {
                                            }
                                        }
                 );
-
                 break;
-
             case R.id.txtForgotPassword:
 
                 getWindow().setExitTransition(null);
@@ -262,9 +201,11 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        intent = new Intent();
+        intent = new Intent(LoginActivity.this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.putExtra("data", false);
         setResult(RESULT_OK, intent);
         finish();
     }
+
 }
