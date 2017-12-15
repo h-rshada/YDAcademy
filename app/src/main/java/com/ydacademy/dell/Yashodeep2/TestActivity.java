@@ -46,7 +46,7 @@ public class TestActivity extends AppCompatActivity {
     CountDownTimer countDownTimer;
     String answerKey, ans, data, userans, exam, subject, chapter, es, class1, standard, user;
     ProgressBar progressBar ;
-    int count, c, i, flag = 0, state = 0;
+    int count, c, i, flag = 0, state = 0, timerflag = 0;
     UrlRequest urlRequest;
     JSONObject json_data;
     SharedPreferences sp;
@@ -93,7 +93,6 @@ public class TestActivity extends AppCompatActivity {
                     check_result();
                 while (userans.length() < 50) {
                     userans+="E";
-
                 }
 
                 // Log.d("Date",)
@@ -124,7 +123,7 @@ public class TestActivity extends AppCompatActivity {
 
                                 }
 
-                                if (count < 50) {
+                                if (timerflag == 0) {
                                     AlertDialog.Builder alertDialog = new AlertDialog.Builder(TestActivity.this);
 
                                     alertDialog.setMessage("Do you really want to submit test? ");
@@ -296,8 +295,10 @@ public class TestActivity extends AppCompatActivity {
         @Override
         public void onFinish() {
 
-            if (count == 50)
+            if (count == 50) {
+                timerflag = 1;
                 btn_submit.performClick();
+            }
             else {
                 check_result();
                 load_image();

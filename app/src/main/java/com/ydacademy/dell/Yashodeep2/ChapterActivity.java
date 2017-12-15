@@ -146,6 +146,7 @@ public class ChapterActivity extends AppCompatActivity {
             case R.id.img_back:
                 Intent intent2 = new Intent(ChapterActivity.this, TabActivity.class);
                 startActivity(intent2);
+                finish();
                 break;
         }
 

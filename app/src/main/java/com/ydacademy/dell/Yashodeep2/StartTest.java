@@ -91,7 +91,7 @@ public class StartTest extends AppCompatActivity {
                                                    }
                                                    if (user.equals("guest")) {
                                                        if (count < 1) {
-                                                           Intent intent = new Intent(StartTest.this, TestActivity.class);
+                                                           Intent intent = new Intent(StartTest.this, GuestTest.class);
                                                            intent.putExtra("Class", class1);
                                                            intent.putExtra("Subject", subject);
                                                            intent.putExtra("Exam", exam);

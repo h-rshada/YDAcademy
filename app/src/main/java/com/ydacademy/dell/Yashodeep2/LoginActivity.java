@@ -251,10 +251,12 @@ public class LoginActivity extends AppCompatActivity {
             case R.id.txtSignup:
                 intent = new Intent(LoginActivity.this, GuestRegistrationActivity.class);
                 startActivity(intent);
+                finish();
                 break;
             case  R.id.img_back:
                 intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();
                 break;
         }
     }
