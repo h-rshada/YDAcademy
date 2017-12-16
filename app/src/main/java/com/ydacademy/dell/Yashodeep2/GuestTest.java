@@ -101,7 +101,7 @@ public class GuestTest extends AppCompatActivity {
                     userans += "E";
                 }
 
-                // Log.d("Date",)
+                //Log.d("Date")
                 urlRequest = UrlRequest.getObject();
                 urlRequest.setContext(GuestTest.this);
                 Log.d("URL***", "onClick: " + "http://yashodeepacademy.co.in/fetchanswerkeys.php?examcode=" + es + chapter + "&class=" + class1);

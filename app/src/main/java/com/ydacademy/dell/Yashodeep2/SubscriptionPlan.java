@@ -7,9 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import butterknife.ButterKnife;
 
 public class SubscriptionPlan extends AppCompatActivity {
-    /*@InjectView(R.id.btnBack)
-    Button btnBack;
-*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,5 +24,5 @@ public class SubscriptionPlan extends AppCompatActivity {
         startActivity(intent);
 
     }
-    }
+}
 
