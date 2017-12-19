@@ -141,7 +141,7 @@ public class ChapterActivity extends AppCompatActivity {
         finish();
     }
 
-    @OnClick(R.id.img_back) /* , R.id.fab*/
+    @OnClick(R.id.img_back)
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.img_back:
