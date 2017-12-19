@@ -42,12 +42,12 @@ public class GuestResult extends AppCompatActivity {
     UrlRequest urlRequest;
     String id;
     SharedPreferences sp;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guest_result);
         ButterKnife.inject(this);
+
         sp = getSharedPreferences("YourSharedPreference", Activity.MODE_PRIVATE);
         class1 = sp.getString("CLASS", null);
         standard = sp.getString("CLASS1", null);
@@ -107,11 +107,11 @@ public class GuestResult extends AppCompatActivity {
             performance.setImageDrawable(getResources().getDrawable(R.drawable.average));
             text_performance.setText("Average performance");
             text_performance.setTextColor(Color.parseColor("#FFA500"));
-        } else if (marks > 4 && marks <= 7) {
+        } else if (marks > 4 && marks <= 6) {
             performance.setImageDrawable(getResources().getDrawable(R.drawable.good));
             text_performance.setText("Good performance");
             text_performance.setTextColor(Color.parseColor("#f4511e"));
-        } else if (marks > 7 && marks <= 10) {
+        } else if (marks > 6 && marks <= 10) {
             performance.setImageDrawable(getResources().getDrawable(R.drawable.excellent));
             text_performance.setText("Excellent performance");
             text_performance.setTextColor(Color.GREEN);
@@ -141,8 +141,9 @@ public class GuestResult extends AppCompatActivity {
                 intent.putExtra("Exam", exam);
                 intent.putExtra("ES", es);
                 intent.putExtra("Chapter", chapter);
-                finish();
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+                finish();
             }
         });
     }
@@ -150,7 +151,9 @@ public class GuestResult extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(GuestResult.this, TabActivity.class));
+        Intent intent = new Intent(GuestResult.this, TabActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
         finish();
     }
 

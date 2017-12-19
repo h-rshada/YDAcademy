@@ -1,11 +1,9 @@
 package com.ydacademy.dell.Yashodeep2;
 
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -97,25 +95,10 @@ public class StartTest extends AppCompatActivity {
                                                            intent.putExtra("Exam", exam);
                                                            intent.putExtra("ES", es);
                                                            intent.putExtra("Chapter", chapter);
-                                                           startActivity(intent);
                                                            finish();
+                                                           startActivity(intent);
                                                        } else {
-                                                           AlertDialog.Builder alertDialog = new AlertDialog.Builder(StartTest.this);
-
-                                                           alertDialog.setMessage("To solve more test you have to subscribed ");
-
-                                                           alertDialog.setPositiveButton(
-                                                                   "Ok",
-                                                                   new DialogInterface.OnClickListener() {
-                                                                       public void onClick(DialogInterface dialog, int id) {
-                                                                           dialog.cancel();
-                                                                           Intent intent = new Intent(StartTest.this, TabActivity.class);
-                                                                           startActivity(intent);
-                                                                           finish();
-
-                                                                       }
-                                                                   });
-                                                           alertDialog.show();
+                                                           Toast.makeText(StartTest.this, "You can attempt test only once", Toast.LENGTH_LONG).show();
                                                        }
                                                    } else {
                                                        if (count < 2) {
@@ -125,8 +108,9 @@ public class StartTest extends AppCompatActivity {
                                                            intent.putExtra("Exam", exam);
                                                            intent.putExtra("ES", es);
                                                            intent.putExtra("Chapter", chapter);
-                                                           startActivity(intent);
                                                            finish();
+                                                           startActivity(intent);
+
                                                        } else
                                                            Toast.makeText(StartTest.this, "Sorry,You can attemp test maximum 2 times", Toast.LENGTH_LONG).show();
 
@@ -139,9 +123,10 @@ public class StartTest extends AppCompatActivity {
                 );
                 break;
             case R.id.img_back:
-                Intent intent=new Intent(StartTest.this,TabActivity.class);
-                startActivity(intent);
+              /*  Intent intent=new Intent(StartTest.this,ChapterActivity.class);
                 finish();
+                startActivity(intent);*/
+                onBackPressed();
                 break;
         }
     }

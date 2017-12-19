@@ -38,6 +38,12 @@ public class CareerGuidance extends AppCompatActivity {
                 startActivity(intent1);
                 break;
         }
-
     }
+
+  /*  @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent=new Intent(CareerGuidance.this,MainActivity.class);
+        startActivity(intent);
+    }*/
 }

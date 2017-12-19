@@ -275,6 +275,7 @@ public class GuestTest extends AppCompatActivity {
         intent.putExtra("Exam", exam);
         intent.putExtra("ES", es);
         intent.putExtra("Chapter", chapter);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         GuestTest.this.finish();
         startActivity(intent);
         finish();

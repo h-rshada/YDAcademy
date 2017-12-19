@@ -2,6 +2,7 @@ package com.ydacademy.dell.Yashodeep2;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -59,12 +60,9 @@ public class SyllabusActivity extends AppCompatActivity {
             }
             @Override
             public void onPageFinished(WebView view, String url) {
-                loading.dismiss();
-
                 String webUrl = webView1.getUrl();
-
+                loading.dismiss();
             }
-
 
         });
 
@@ -90,6 +88,10 @@ public class SyllabusActivity extends AppCompatActivity {
         Log.d("PDF", "https://docs.google.com/gview?embedded=true&url=http://yashodeepacademy.co.in/admin/routes/syllabus/" + class1 + exam + subject + ".pdf");
     }
 
-
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(SyllabusActivity.this, TabActivity.class);
+        startActivity(intent);
+    }
 }

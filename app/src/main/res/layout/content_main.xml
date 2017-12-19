@@ -90,7 +90,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="75dp"
                             android:layout_marginTop="5dp"
-                            android:background="#b2b"
+                            android:background="#000"
                             android:drawableRight="@drawable/forwardarrow"
                             android:text="Enter In My ClassRoom"
                             android:textColor="@color/white"

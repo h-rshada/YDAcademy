@@ -113,7 +113,7 @@
                 android:layout_column="2"
                 android:layout_marginLeft="18dp"
                 android:layout_marginTop="50dp"
-                android:text="Total number of questions : 50"
+                android:text="Total number of questions for subscribed user: 50, And 10 questions for guest user."
                 android:textSize="16dp">
 
             </TextView>
@@ -124,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="90dp"
                 android:text="\u25CF"
                 android:textSize="16dp">
 
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_column="2"
                 android:layout_marginLeft="18dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="90dp"
                 android:text="Time alloted : 1 minute to each question."
                 android:textSize="16dp">
 
@@ -194,7 +194,6 @@
                 android:layout_marginTop="170dp"
                 android:text="\u25CF"
                 android:textSize="16dp">
-
             </TextView>
 
             <TextView

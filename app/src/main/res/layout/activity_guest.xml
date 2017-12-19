@@ -1,42 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/txtName"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffff">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/leftarrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Guest Classroom"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:text="Select Class"
-        android:textColor="@color/black"
-        android:textSize="30dp" />
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:weightSum="1">
 
-    <Button
-        android:id="@+id/btnTenth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="10" />
+        <Button
+            android:id="@+id/btnTenth"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="5"
+            android:background="@drawable/tenth"
+            android:text="0"
+            android:textSize="1dp" />
 
-    <Button
-        android:id="@+id/btnEleventh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="11" />
+        <Button
+            android:id="@+id/btnEleventh"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="5"
+            android:background="@drawable/eleventh"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
-    <Button
-        android:id="@+id/btnTwelth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="12" />
+        <Button
+            android:id="@+id/btnTwelth"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="5"
+            android:background="@drawable/twelth"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="1dp" />
+    </LinearLayout>
 
-
-</LinearLayout>
+</RelativeLayout>

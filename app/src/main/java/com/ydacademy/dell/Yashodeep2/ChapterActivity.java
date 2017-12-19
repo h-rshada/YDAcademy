@@ -115,7 +115,7 @@ public class ChapterActivity extends AppCompatActivity {
                                        }
                                        loading.dismiss();
 
-                                       //Log.d("Chapters", chapters.toString() + "");
+                                       Log.d("Chapters", chapters.toString() + "");
                                        adapter = new ArrayAdapter(ChapterActivity.this, android.R.layout.simple_list_item_1, chapters);
                                        listChapters.setAdapter(adapter);
                                        adapter.notifyDataSetChanged();
@@ -148,6 +148,7 @@ public class ChapterActivity extends AppCompatActivity {
                 Intent intent2 = new Intent(ChapterActivity.this, TabActivity.class);
                 startActivity(intent2);
                 finish();
+                //onBackPressed();
                 break;
         }
 

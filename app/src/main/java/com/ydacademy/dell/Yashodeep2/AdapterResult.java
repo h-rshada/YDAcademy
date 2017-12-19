@@ -2,6 +2,7 @@ package com.ydacademy.dell.Yashodeep2;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.support.v7.widget.LinearSmoothScroller;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Gravity;
@@ -197,6 +198,16 @@ public class AdapterResult extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 myHolder.funControl.collapse();
             }
         });
+
+        RecyclerView.SmoothScroller smoothScroller = new LinearSmoothScroller(context) {
+            @Override
+            protected int getVerticalSnapPreference() {
+                return LinearSmoothScroller.SNAP_TO_START;
+            }
+        };
+        smoothScroller.setTargetPosition(position);
+        //layoutManager.startSmoothScroll(smoothScroller);
+
 
     }
 

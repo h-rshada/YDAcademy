@@ -77,7 +77,6 @@ public class SyllabusFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_syllabus, container, false);
         intent = new Intent(getActivity(), SyllabusActivity.class);
         ButterKnife.inject(this, view);
-
         return view;
     }
 

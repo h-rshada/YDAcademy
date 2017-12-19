@@ -26,6 +26,8 @@ public class DescriptionActivity extends AppCompatActivity {
     AdapterResult adapter;
     @InjectView(R.id.hostelList)
     RecyclerView recyclerView;
+    @InjectView(R.id.btnViewPlan)
+    Button btnViewplan;
     List<DataResult> data;
     SharedPreferences sp;
     String class1, exam, subject, es, chapter, id, standard, user;
@@ -78,24 +80,13 @@ public class DescriptionActivity extends AppCompatActivity {
             //Creating a view to get the dialog box
             View guestDialog = li.inflate(R.layout.dialog_subscription, null);
             final TextView txtName = guestDialog.findViewById(R.id.txtName);
-            Button btnSubscription = guestDialog.findViewById(R.id.btnSubscription);
             Button btnCancel = guestDialog.findViewById(R.id.btnCancel);
-
+            btnViewplan.setVisibility(View.VISIBLE);
             final AlertDialog.Builder alert = new AlertDialog.Builder(DescriptionActivity.this);
             // Adding our dialog box to the view of alert dialog
             alert.setView(guestDialog);
             //Creating an alert dialog
             final AlertDialog alertDialog = alert.create();
-
-            btnSubscription.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(DescriptionActivity.this, SubscriptionPlan.class);
-                    startActivity(intent);
-                    // alertDialog.dismiss();
-
-                }
-            });
             btnCancel.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -104,6 +95,14 @@ public class DescriptionActivity extends AppCompatActivity {
             });
 
             alertDialog.show();
+            btnViewplan.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(DescriptionActivity.this, SubscriptionPlan.class);
+                    finish();
+                    startActivity(intent);
+                }
+            });
 
         } else {
             for (int i = 0; i < 50; i++) {
@@ -140,6 +139,7 @@ public class DescriptionActivity extends AppCompatActivity {
     public void onBackPressed() {
         //super.onBackPressed();
         Intent intent = new Intent(DescriptionActivity.this, TabActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
         finish();
     }

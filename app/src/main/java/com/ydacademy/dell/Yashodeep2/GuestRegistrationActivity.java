@@ -2,17 +2,21 @@ package com.ydacademy.dell.Yashodeep2;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnClick;
 
 public class GuestRegistrationActivity extends AppCompatActivity {
 
@@ -32,6 +36,9 @@ public class GuestRegistrationActivity extends AppCompatActivity {
     String name, password, emailid, phone;
     int flag = 0;
     ProgressDialog loading;
+    @InjectView(R.id.img_back)
+    ImageView imageback;
+    Toolbar toolbar;
 
 
     @Override
@@ -39,6 +46,8 @@ public class GuestRegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guest_registration);
         ButterKnife.inject(this);
+        toolbar = (Toolbar) findViewById(R.id.toolbar1);
+        setSupportActionBar(toolbar);
        /* Random r1 = new Random();
         StringBuilder builder=new StringBuilder();
         for(int count=1; count<=6;count++) {
@@ -112,4 +121,13 @@ public class GuestRegistrationActivity extends AppCompatActivity {
 
     }
 
+    @OnClick(R.id.img_back)
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.img_back:
+                Intent intent = new Intent(GuestRegistrationActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+        }
+    }
 }

@@ -2,6 +2,8 @@ package com.ydacademy.dell.Yashodeep2;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -13,6 +15,7 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.transition.Explode;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
@@ -59,6 +62,7 @@ public class LoginActivity extends AppCompatActivity {
     Intent intent;
     SharedPreferences.Editor editor;
     Button btnEleventh, btnTwelth, btnTenth;
+    ProgressDialog loading;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,6 +105,20 @@ public class LoginActivity extends AppCompatActivity {
 
                 name = sp.getString("USERNAME", null);
                 class1 = sp.getString("CLASS", null);
+                loading = ProgressDialog.show(LoginActivity.this, "Loading", "Please wait.....", false, true);
+                loading.setOnKeyListener(new ProgressDialog.OnKeyListener() {
+                    @Override
+                    public boolean onKey(DialogInterface arg0, int keyCode,
+                                         KeyEvent event) {
+                        // TODO Auto-generated method stub
+                        if (keyCode == KeyEvent.KEYCODE_BACK) {
+                            finish();
+                            loading.dismiss();
+                        }
+                        return true;
+                    }
+                });
+
 
                 urlRequest = UrlRequest.getObject();
                 urlRequest.setContext(LoginActivity.this);
@@ -110,6 +128,7 @@ public class LoginActivity extends AppCompatActivity {
                                            @Override
                                            public void onSuccess(String response) {
                                                try {
+                                                   loading.dismiss();
 
                                                    Log.d("Response", response);
                                                    if (!response.contains("Invalid Username or password")) {
